@@ -1,91 +1,134 @@
-["name": "jsoup",
- "url": "https://jsoup.org/",
- "type": "tgz",
- [["version": "1.9.2",
-   "sourcetgz": "https://github.com/jhy/jsoup/archive/jsoup-1.9.2.tar.gz"],
-  ["version": "1.10.1",
-   "sourcetgz": "https://github.com/jhy/jsoup/archive/jsoup-1.10.1.tar.gz"]
+[
+ {
+  "name": "jsoup",
+  "url": "https://jsoup.org/",
+  "type": "tgz",
+  "versions": [
+   {"version": "1.9.2", "source": "https://github.com/jhy/jsoup/archive/jsoup-1.9.2.tar.gz"},
+   {"version": "1.10.1", "source": "https://github.com/jhy/jsoup/archive/jsoup-1.10.1.tar.gz"}
+  ]
+ },
+ {
+  "name": "apache-commons-math",
+  "url": "https://commons.apache.org/proper/commons-math/",
+  "releases": "http://archive.apache.org/dist/commons/math/source/",
+  "type": "tgz",
+  "versions": [
+   {"version": "3.2","source": "http://archive.apache.org/dist/commons/math/source/commons-math3-3.2-src.tar.gz"},
+   {"version": "3.3","source": "http://archive.apache.org/dist/commons/math/source/commons-math3-3.3-src.tar.gz"}
+  ]
+ },
+ {
+  "name": "apache-commons-lang",
+  "url": "https://commons.apache.org/proper/commons-lang/",
+  "releases": "http://archive.apache.org/dist/commons/lang/source/",
+  "type": "tgz",
+  "versions": [
+   {"version": "3.2.1","source": "http://archive.apache.org/dist/commons/lang/source/commons-lang3-3.2.1-src.tar.gz"},
+   {"version": "3.3","source": "http://archive.apache.org/dist/commons/lang/source/commons-lang3-3.3-src.tar.gz"}
+  ]
+ },
+ {
+  "name": "maven-scm",
+  "url": "https://maven.apache.org/scm/index.html",
+  "releases": "http://archive.apache.org/dist/maven/scm/",
+  "type": "zip",
+  "versions": [
+   {"version": "1.9.1","source": "http://archive.apache.org/dist/maven/scm/maven-scm-1.9.1-source-release.zip"},
+   {"version": "1.11.2","source": "http://archive.apache.org/dist/maven/scm/maven-scm-1.11.2-source-release.zip"}
+  ]
+ },
+ {
+  "name": "jmeter",
+  "url": "http://jmeter.apache.org/",
+  "releases": "https://archive.apache.org/dist/jmeter/source/",
+  "type": "zip",
+  "build": "gradle",
+  "versions": [
+   {
+    "version": "5.2.1",
+    "source": "https://archive.apache.org/dist/jmeter/source/jakarta-jmeter-5.2.1_src.tgz"
+   },
+   {
+    "version": "5.1",
+    "source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.1_src.tgz"
+   }
+  ]
+ },
+ {
+  "name": "jodatime",
+  "url": "https://www.joda.org/joda-time/",
+  "releases": "https://github.com/JodaOrg/joda-time/releases",
+  "type": "tgz",
+  "versions": [
+   {
+    "version": "2.10.5",
+    "source": "https://github.com/JodaOrg/joda-time/releases/download/v2.10.5/joda-time-2.10.5-dist.tar.gz"
+   },
+   {
+    "version": "2.0",
+    "source": "https://github.com/JodaOrg/joda-time/archive/v2.0.tar.gz"
+   }
+  ]
+ },
+ {
+  "name": "jbehave",
+  "url": "https://jbehave.org/",
+  "releases": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/",
+  "type": "zip",
+  "versions": [
+   {
+    "version": "4.6.1",
+    "source": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/4.6.1/jbehave-distribution-4.6.1-src.zip"
+   },
+   {
+    "version": "4.0.1",
+    "source": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/4.0.1/jbehave-distribution-4.0.1-src.zip"
+   }
+  ]
+ },
+ {
+  "name": "jackson-annotations",
+  "url": "https://github.com/FasterXML/jackson-annotations",
+  "releases": "https://github.com/FasterXML/jackson-annotations/releases",
+  "type": "tgz",
+  "versions": [
+   {
+    "version": "2.10.2",
+    "source": "https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.10.2.tar.gz"
+   },
+   {
+    "version": "2.7.0",
+    "source": "https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.7.0.tar.gz"
+   }
+  ]
+ },
+ {
+  "name": "ph-commons",
+  "url": "https://github.com/phax/ph-commons",
+  "releases": "https://github.com/phax/ph-commons/releases",
+  "type": "tgz",
+  "versions": [
+   {
+    "version": "9.3.9",
+    "source": "https://github.com/phax/ph-commons/archive/ph-commons-parent-pom-9.3.9.tar.gz"
+   },
+   {
+    "version": "9.0.0",
+    "source": "https://github.com/phax/ph-commons/archive/ph-commons-parent-pom-9.0.0.tar.gz"
+   }
+  ]
+ },
+ {
+  "name": "appformer",
+  "url": "https://github.com/kiegroup/appformer",
+  "releases": "https://github.com/kiegroup/appformer/releases",
+  "type": "tgz",
+  "versions": [
+   {"version": "7.33.0.Final",
+   "source": "https://github.com/kiegroup/appformer/archive/7.33.0.Final.tar.gz"},
+   {"version": "7.5.0.Final",
+   "source": "https://github.com/kiegroup/appformer/archive/7.5.0.Final.tar.gz"}
+  ]
+ }
  ]
-],
-["name": "apache-commons-math",
- "url": "https://commons.apache.org/proper/commons-math/",
- "releases": "http://archive.apache.org/dist/commons/math/source/",
- "type": "tgz",
- [["version": "3.2",
-   "source": "http://archive.apache.org/dist/commons/math/source/commons-math3-3.2-src.tar.gz"],
-  ["version": "3.3",
-   "source": "http://archive.apache.org/dist/commons/math/source/commons-math3-3.3-src.tar.gz"]]
-],
-["name": "apache-commons-lang",
- "url": "https://commons.apache.org/proper/commons-lang/",
- "releases": "http://archive.apache.org/dist/commons/lang/source/",
- "type": "tgz",
- [["version": "3.2.1",
-   "source": "http://archive.apache.org/dist/commons/lang/source/commons-lang3-3.2.1-src.tar.gz"],
-  ["version": "3.3",
-   "source": "http://archive.apache.org/dist/commons/lang/source/commons-lang3-3.3-src.tar.gz"]]
-],
-["name": "maven-scm",
- "url": "https://maven.apache.org/scm/index.html",
- "releases": "http://archive.apache.org/dist/maven/scm/",
- "type": "zip",
- [["version": "1.9.1",
-   "source": "http://archive.apache.org/dist/maven/scm/maven-scm-1.9.1-source-release.zip"],
- ["version", "1.11.2",
-  "source": "http://archive.apache.org/dist/maven/scm/maven-scm-1.11.2-source-release.zip"]]
-],
-["name": "jmeter",
- "url": "http://jmeter.apache.org/",
- "releases": "https://archive.apache.org/dist/jmeter/source/",
- "type": "zip",
- "build": "gradle",
- [["version": "5.2.1",
-   "source": "https://archive.apache.org/dist/jmeter/source/jakarta-jmeter-5.2.1_src.tgz"],
-  ["version": "5.1",
-   "source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.1_src.tgz"]]
-],
-["name": "jodatime",
- "url": "https://www.joda.org/joda-time/",
- "releases": "https://github.com/JodaOrg/joda-time/releases",
- "type": "tgz",
- [["version": "2.10.5",
-   "source": "https://github.com/JodaOrg/joda-time/releases/download/v2.10.5/joda-time-2.10.5-dist.tar.gz"],
-  ["version": "2.0",
-   "source": "https://github.com/JodaOrg/joda-time/archive/v2.0.tar.gz"]]
-],
-["name": "jbehave",
- "url": "https://jbehave.org/",
- "releases": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/",
- "type": "zip",
- [["version": "4.6.1",
-   "source": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/4.6.1/jbehave-distribution-4.6.1-src.zip"],
-  ["version": "4.0.1",
-   "source": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/4.0.1/jbehave-distribution-4.0.1-src.zip"]]
-],
-["name": "jackson-annotations",
- "url": "https://github.com/FasterXML/jackson-annotations",
- "releases": "https://github.com/FasterXML/jackson-annotations/releases",
- "type": "tgz",
- [["version": "2.10.2",
-   "source": "https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.10.2.tar.gz"],
-  ["version": "2.7.0",
-   "source": "https://github.com/FasterXML/jackson-annotations/archive/jackson-annotations-2.7.0.tar.gz"]]
-],
-["name": "ph-commons",
- "url": "https://github.com/phax/ph-commons",
- "releases": "https://github.com/phax/ph-commons/releases",
- "type": "tgz",
- [["version": "9.3.9",
-   "source": "https://github.com/phax/ph-commons/archive/ph-commons-parent-pom-9.3.9.tar.gz"],
-  ["version": "9.0.0",
-   "source": "https://github.com/phax/ph-commons/archive/ph-commons-parent-pom-9.0.0.tar.gz"]]
-],
-["name": "appformer",
- "url": "https://github.com/kiegroup/appformer",
- "releases": "https://github.com/kiegroup/appformer/releases",
- "type": "tgz",
- [["version": "7.33.0.Final",
-   "source": "https://github.com/kiegroup/appformer/archive/7.33.0.Final.tar.gz"],
-  ["version": "7.5.0.Final",
-   "source": "https://github.com/kiegroup/appformer/archive/7.5.0.Final.tar.gz"]]
-],
