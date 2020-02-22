@@ -3,6 +3,7 @@
   "name": "jsoup",
   "url": "https://jsoup.org/",
   "type": "tgz",
+  "build": "mvn",
   "versions": [
    {"version": "1.9.2", "source": "https://github.com/jhy/jsoup/archive/jsoup-1.9.2.tar.gz", "dir": "jsoup-jsoup-1.9.2"},
    {"version": "1.10.1", "source": "https://github.com/jhy/jsoup/archive/jsoup-1.10.1.tar.gz", "dir": "jsoup-jsoup-1.10.1"}
@@ -11,31 +12,34 @@
  {
   "name": "apache-commons-math",
   "url": "https://commons.apache.org/proper/commons-math/",
-  "releases": "http://archive.apache.org/dist/commons/math/source/",
+  "releases": "https://archive.apache.org/dist/commons/math/source/",
   "type": "tgz",
+  "build": "mvn",
   "versions": [
-   {"version": "3.2","source": "http://archive.apache.org/dist/commons/math/source/commons-math3-3.2-src.tar.gz", "dir": "commons-math3-3.2-src"},
-   {"version": "3.3","source": "http://archive.apache.org/dist/commons/math/source/commons-math3-3.3-src.tar.gz", "dir": "commons-math3-3.3-src"}
+   {"version": "3.2","source": "https://archive.apache.org/dist/commons/math/source/commons-math3-3.2-src.tar.gz", "dir": "commons-math3-3.2-src"},
+   {"version": "3.3","source": "https://archive.apache.org/dist/commons/math/source/commons-math3-3.3-src.tar.gz", "dir": "commons-math3-3.3-src"}
   ]
  },
  {
   "name": "apache-commons-lang",
   "url": "https://commons.apache.org/proper/commons-lang/",
-  "releases": "http://archive.apache.org/dist/commons/lang/source/",
+  "releases": "https://archive.apache.org/dist/commons/lang/source/",
   "type": "tgz",
+  "build": "mvn",
   "versions": [
-   {"version": "3.2.1","source": "http://archive.apache.org/dist/commons/lang/source/commons-lang3-3.2.1-src.tar.gz", "dir": "commons-lang3-3.2.1-src"},
-   {"version": "3.3","source": "http://archive.apache.org/dist/commons/lang/source/commons-lang3-3.3-src.tar.gz", "dir": "commons-lang3-3.3-src"}
+   {"version": "3.2.1","source": "https://archive.apache.org/dist/commons/lang/source/commons-lang3-3.2.1-src.tar.gz", "dir": "commons-lang3-3.2.1-src"},
+   {"version": "3.3","source": "https://archive.apache.org/dist/commons/lang/source/commons-lang3-3.3-src.tar.gz", "dir": "commons-lang3-3.3-src"}
   ]
  },
  {
   "name": "maven-scm",
   "url": "https://maven.apache.org/scm/index.html",
-  "releases": "http://archive.apache.org/dist/maven/scm/",
+  "releases": "https://archive.apache.org/dist/maven/scm/",
   "type": "zip",
+  "build": "mvn",
   "versions": [
-   {"version": "1.9.1","source": "http://archive.apache.org/dist/maven/scm/maven-scm-1.9.1-source-release.zip", "dir": "maven-scm-1.9.1"},
-   {"version": "1.11.2","source": "http://archive.apache.org/dist/maven/scm/maven-scm-1.11.2-source-release.zip", "dir": "maven-scm-1.11.2"}
+   {"version": "1.9.1","source": "https://archive.apache.org/dist/maven/scm/maven-scm-1.9.1-source-release.zip", "dir": "maven-scm-1.9.1"},
+   {"version": "1.11.2","source": "https://archive.apache.org/dist/maven/scm/maven-scm-1.11.2-source-release.zip", "dir": "maven-scm-1.11.2"}
   ]
  },
  {
@@ -47,7 +51,7 @@
   "versions": [
    {
     "version": "5.2.1",
-    "source": "https://archive.apache.org/dist/jmeter/source/jakarta-jmeter-5.2.1_src.tgz",
+    "source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.2.1_src.tgz",
     "dir": "apache-jmeter-5.1"
    },
    {
@@ -62,6 +66,7 @@
   "url": "https://www.joda.org/joda-time/",
   "releases": "https://github.com/JodaOrg/joda-time/releases",
   "type": "tgz",
+  "build": "mvn",
   "versions": [
    {
     "version": "2.10.5",
@@ -80,6 +85,7 @@
   "url": "https://jbehave.org/",
   "releases": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/",
   "type": "zip",
+  "build": "mvn",
   "versions": [
    {
     "version": "4.6.1",
@@ -98,6 +104,7 @@
   "url": "https://github.com/FasterXML/jackson-annotations",
   "releases": "https://github.com/FasterXML/jackson-annotations/releases",
   "type": "tgz",
+  "build": "mvn",
   "versions": [
    {
     "version": "2.10.2",
@@ -116,6 +123,7 @@
   "url": "https://github.com/phax/ph-commons",
   "releases": "https://github.com/phax/ph-commons/releases",
   "type": "tgz",
+  "build": "mvn",
   "versions": [
    {
     "version": "9.3.9",
@@ -134,6 +142,7 @@
   "url": "https://github.com/kiegroup/appformer",
   "releases": "https://github.com/kiegroup/appformer/releases",
   "type": "tgz",
+  "build": "mvn",
   "versions": [
    {"version": "7.33.0.Final",
     "source": "https://github.com/kiegroup/appformer/archive/7.33.0.Final.tar.gz",
