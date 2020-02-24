@@ -47,17 +47,17 @@
   "url": "http://jmeter.apache.org/",
   "releases": "https://archive.apache.org/dist/jmeter/source/",
   "type": "zip",
-  "build": "gradle",
+  "build": "gradlew",
   "versions": [
    {
     "version": "5.2.1",
     "source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.2.1_src.tgz",
-    "dir": "apache-jmeter-5.1"
+    "dir": "apache-jmeter-5.2.1"
    },
    {
-    "version": "5.1",
-    "source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.1_src.tgz",
-    "dir": "apache-jmeter-5.2.1"
+    "version": "5.2",
+    "source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.2_src.tgz",
+    "dir": "apache-jmeter-5.2"
    }
   ]
  },

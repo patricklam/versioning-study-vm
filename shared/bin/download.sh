@@ -5,6 +5,11 @@ if [ -z $1 ]; then
   exit 1
 fi
 
+if [ "benchmarks" != $(basename $(pwd)) ]; then
+  echo Must run from 'benchmarks' directory!
+  exit 1
+fi
+
 INPUT=$1
 for c in $(jq '.[].versions[].source' < "$INPUT"); do
   /usr/bin/wget -nc `sed -e 's/^"//' -e 's/"$//' <<<"$c"`
