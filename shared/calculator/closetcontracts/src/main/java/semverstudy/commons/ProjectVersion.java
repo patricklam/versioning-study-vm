@@ -11,6 +11,7 @@ public class ProjectVersion {
 
     private String version = null;
     private URL source = null;
+    private String dir = null;
 
     public String getVersion() {
         return version;
@@ -28,17 +29,26 @@ public class ProjectVersion {
         this.source = source;
     }
 
+    public String getDir() {
+        return dir;
+    }
+
+    public void setDir(String dir) {
+        this.dir = dir;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ProjectVersion that = (ProjectVersion) o;
         return Objects.equals(version, that.version) &&
-                Objects.equals(source, that.source);
+                Objects.equals(source, that.source) &&
+                Objects.equals(dir, that.dir);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(version, source);
+        return Objects.hash(version, source, dir);
     }
 }

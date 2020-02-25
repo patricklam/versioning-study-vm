@@ -15,6 +15,15 @@ public class Project {
     private URL releases = null;
     private ArchiveType type = null;
     private ProjectVersion[] versions = null;
+    private String build = null;
+
+    public String getBuild() {
+        return build;
+    }
+
+    public void setBuild(String build) {
+        this.build = build;
+    }
 
     public String getName() {
         return name;
@@ -65,12 +74,13 @@ public class Project {
                 Objects.equals(url, project.url) &&
                 Objects.equals(releases, project.releases) &&
                 type == project.type &&
-                Arrays.equals(versions, project.versions);
+                Arrays.equals(versions, project.versions) &&
+                Objects.equals(build, project.build);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(name, url, releases, type);
+        int result = Objects.hash(name, url, releases, type, build);
         result = 31 * result + Arrays.hashCode(versions);
         return result;
     }
