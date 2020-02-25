@@ -77,7 +77,6 @@ public class Project {
                 Arrays.equals(versions, project.versions) &&
                 Objects.equals(build, project.build);
     }
-
     @Override
     public int hashCode() {
         int result = Objects.hash(name, url, releases, type, build);

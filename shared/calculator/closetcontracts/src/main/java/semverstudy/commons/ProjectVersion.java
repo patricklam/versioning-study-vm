@@ -46,7 +46,6 @@ public class ProjectVersion {
                 Objects.equals(source, that.source) &&
                 Objects.equals(dir, that.dir);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(version, source, dir);
