@@ -1,0 +1,9 @@
+[
+ {
+  "name": "jsoup",
+  "version1": "1.9.2",
+  "version2": "1.10.1",
+  "tool": "fbinfer",
+  "results": [["resourceleak", "+1"], ["nullderef", "+1"]]
+ }
+]
