@@ -28,6 +28,7 @@ def retrieve_outputs(projects_file, proj):
 
 def main(argv):
     projects_file = argv[1]
+    # TODO if len(argv) == 1 then iterate over all projects
     proj = argv[2]
     (base1, base2) = retrieve_bases(projects_file, proj)
     (output1, output2) = retrieve_outputs(projects_file, proj)
@@ -49,22 +50,27 @@ def main(argv):
                 f1 = f1h.readlines()
             with open(path.join(base2, reported_file), 'r') as f2h:
                 f2 = f2h.readlines()
+            rf_bugs2_matched = set()
             for (_, target, bug_type) in rf_bugs1:
                 matching_line = compute_matching_line(f1, f2, target)
                 if matching_line is None:
                     print ('bug {} file {} line1 {} missing from version 2'.format(bug_type, reported_file, target))
-                print ('bug {} file {} line1 {} line2 {}'.format(bug_type, reported_file, target, matching_line))
-            # TODO now look for things in rf_bugs2 that aren't in rf_bugs1
+                else:
+                    print ('bug {} file {} line1 {} line2 {}'.format(bug_type, reported_file, target, matching_line))
+                rf_bugs2_matched.add((reported_file, matching_line, bug_type))
+            for rb2 in rf_bugs2:
+                if rb2 not in rf_bugs2_matched:
+                    (reported_file, target, bug_type) = rb2
+                    matching_line = compute_matching_line(f2, f1, target)
+                    if matching_line is None:
+                        print ('bug {} file {} line1 {} missing from version 1'.format(bug_type, reported_file, target))
+                    else:
+                        print ('bug {} file {} line1 {} line2 {}'.format(bug_type, reported_file, target, matching_line))
         except FileNotFoundError:
-            print ('file {} missing from one version'.format(reported_file))
-
-    sys.exit(0)
-
-    path_to_file = "src/main/java/org/apache/commons/math3/geometry/euclidean/twod/SubLine.java"
-    target = 120
-
-
-    print ('matching line for {} is {}'.format(target, matching_line))
+            if not path.exists(path.join(base1, reported_file)):
+                print ('file {} missing from version 1: {}, v2 has {} bugs'.format(reported_file, base1, len(rf_bugs2)))
+            if not path.exists(path.join(base2, reported_file)):
+                print ('file {} missing from version 2: {}, v1 has {} bugs'.format(reported_file, base2, len(rf_bugs1)))
 
 if __name__ == "__main__":
     main(sys.argv)
