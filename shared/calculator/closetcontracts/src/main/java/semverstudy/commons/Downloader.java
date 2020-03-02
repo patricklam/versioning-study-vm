@@ -50,7 +50,7 @@ public class Downloader {
 
         String targetFolderName = null;
         ArchiveType archiveType = null;
-        if (url.toString().endsWith(".tar.gz")) {
+        if (url.toString().endsWith(".tar.gz") || url.toString().endsWith(".tgz")) {
             archiveType = ArchiveType.tgz;
             targetFolderName = cachedFileName.substring(0,cachedFileName.length()-7);
         }
@@ -59,7 +59,7 @@ public class Downloader {
             targetFolderName = cachedFileName.substring(0,cachedFileName.length()-4);
         }
         else {
-            throw new IllegalArgumentException("Cannot infer archive format from URL");
+            throw new IllegalArgumentException("Cannot infer archive format from URL " + url);
         }
 
         File targetFolder = new File(CACHE,targetFolderName);
