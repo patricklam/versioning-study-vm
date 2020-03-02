@@ -14,10 +14,10 @@ mkdir output
 
 INPUT=$1
 for c in $(jq '.[] | select(.build == "gradlew").versions[].dir' < "$INPUT"); do
-  ( cd $c; ./gradlew test; echo $? > ../$(basename $(pwd))-test-result.out )
+  ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; ./gradlew test; echo $? > ../$(basename $(pwd))-test-result.out )
 done
 
 for c in $(jq '.[] | select(.build == "mvn").versions[].dir' < "$INPUT"); do
-  ( cd $c; mvn test; echo $? > ../$(basename $(pwd))-test-result.out )
+  ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; mvn test >& ../$(basename $(pwd))-test-output; echo $? > ../$(basename $(pwd))-test-error-code )
 done
 

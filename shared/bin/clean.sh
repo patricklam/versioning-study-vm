@@ -11,11 +11,13 @@ if [ "benchmarks" != $(basename $(pwd)) ]; then
 fi
 
 INPUT=$1
+echo Running 'gradlew clean' on gradlew projects...
 for c in $(jq '.[] | select(.build == "gradlew").versions[].dir' < "$INPUT"); do
-  ( cd $c; ./gradlew clean )
+  ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; ./gradlew clean )
 done
 
+echo Running 'mvn clean' on mvn projects...
 for c in $(jq '.[] | select(.build == "mvn").versions[].dir' < "$INPUT"); do
-  ( cd $c; mvn clean )
+  ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; mvn clean )
 done
 
