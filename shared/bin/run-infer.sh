@@ -14,11 +14,11 @@ INPUT=$1
 
 process() {
   for c in $(jq '.[] | select(.build == "gradlew").versions[].dir' < "$INPUT"); do
-    ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; ./gradlew clean; infer run -- ./gradlew build )
+    ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; rm -rf infer-out; ./gradlew clean; infer run -- ./gradlew build )
   done
 
   for c in $(jq '.[] | select(.build == "mvn").versions[].dir' < "$INPUT"); do
-    ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; mvn clean; infer run -- mvn compile )
+    ( cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c"); cd $cc; rm -rf infer-out; mvn clean; infer run -- mvn compile -Drat.skip=true )
   done
 }
 
