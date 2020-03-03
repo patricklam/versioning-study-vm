@@ -81,21 +81,21 @@
   ]
  },
  {
-  "name": "jbehave",
-  "url": "https://jbehave.org/",
-  "releases": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/",
-  "type": "zip",
+  "name": "plexus-utils",
+  "url": "https://github.com/codehaus-plexus/plexus-utils",
+  "releases": "https://github.com/codehaus-plexus/plexus-utils/releases",
+  "type": "tgz",
   "build": "mvn",
   "versions": [
    {
-    "version": "4.6.1",
-    "source": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/4.6.1/jbehave-distribution-4.6.1-src.zip",
-    "dir": "jbehave-4.0.1"
+    "version": "3.3.0",
+    "source": "https://github.com/codehaus-plexus/plexus-utils/archive/plexus-utils-3.3.0.tar.gz",
+    "dir": "plexus-utils-plexus-utils-3.3.0"
    },
    {
-    "version": "4.0.1",
-    "source": "https://repo1.maven.org/maven2/org/jbehave/jbehave-distribution/4.0.1/jbehave-distribution-4.0.1-src.zip",
-    "dir": "jbehave-4.6.1"
+    "version": "3.0",
+    "source": "https://github.com/codehaus-plexus/plexus-utils/archive/plexus-utils-3.0.tar.gz",
+    "dir": "plexus-utils-plexus-utils-3.0"
    }
   ]
  },
