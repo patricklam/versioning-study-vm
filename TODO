@@ -1,0 +1,3 @@
+PL:
+* implement for-all-benchmarks and for-one-benchmark mode for scripts
+* fbinfer: look at output, generate output in proper format
