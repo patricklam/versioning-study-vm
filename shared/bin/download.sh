@@ -10,6 +10,8 @@ if [ "benchmarks" != $(basename $(pwd)) ]; then
   exit 1
 fi
 
+# TODO: parameter 2 can be a specific benchmark to download
+# TODO: delete the old version, only untar the files we download
 INPUT=$1
 for c in $(jq '.[].versions[].source' < "$INPUT"); do
   /usr/bin/wget -nc `sed -e 's/^"//' -e 's/"$//' <<<"$c"`
