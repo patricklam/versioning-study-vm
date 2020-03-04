@@ -24,6 +24,9 @@ public class Main {
 			File previousVersionBinary = null;
 			for (int i = 0; i < versions.length; ++i) {
 				ProjectVersion version = versions[i];
+				if(version.getBinary() == null || version.getBinary().equals("")) {
+					break;
+				}
 				File currentVersionBinary = Downloader.download(version.getBinary());
 				if(previousVersionBinary != null) {
 					analyse(previousVersionBinary,currentVersionBinary);

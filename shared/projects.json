@@ -182,7 +182,7 @@
 	    {
 		"version": "9.0.0",
 		"source": "https://github.com/phax/ph-commons/archive/ph-commons-parent-pom-9.0.0.tar.gz",
-		"binary": "https://repo1.maven.org/maven2/com/helger/ph-commons/9.3.9/ph-commons-9.0.0.jar",
+		"binary": "https://repo1.maven.org/maven2/com/helger/ph-commons/9.0.0/ph-commons-9.0.0.jar",
 		"dir": "ph-commons-ph-commons-parent-pom-9.0.0"
 	    }
 	]
