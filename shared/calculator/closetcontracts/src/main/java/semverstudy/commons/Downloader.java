@@ -57,44 +57,51 @@ public class Downloader {
         else if (url.toString().endsWith(".zip")) {
             archiveType = ArchiveType.zip;
             targetFolderName = cachedFileName.substring(0,cachedFileName.length()-4);
+        } else if(url.toString().endsWith(".jar")) {
+        	// do nothing here
         }
         else {
             throw new IllegalArgumentException("Cannot infer archive format from URL " + url);
         }
 
-        File targetFolder = new File(CACHE,targetFolderName);
+        // Copy URL to cached file
+        File cachedFile = new File(CACHE,cachedFileName);
+        LOGGER.info("Fetching data from URL: " + url);
+        FileUtils.copyURLToFile(url, cachedFile, CONNECT_TIMEOUT, READ_TIMEOUT);
+        LOGGER.info("Done, temp archive created: " + cachedFile);
+        //
+        if(targetFolderName == null) {
+        	// Must be jar
+        	return cachedFile;
+        } else {
+            // Expand into target folder
+        	File targetFolder = new File(CACHE,targetFolderName);
+        	//
+        	if (!targetFolder.exists()) {
+        		// unzip
+        		ConsoleLoggerManager manager = new ConsoleLoggerManager();
+        		Logger plexusLogger = manager.getLoggerForComponent("archive-downloader");
 
-        if (!targetFolder.exists()) {
-            File cachedFile = new File(CACHE,cachedFileName);
-            LOGGER.info("Fetching data from URL: " + url);
-            FileUtils.copyURLToFile(url, cachedFile, CONNECT_TIMEOUT, READ_TIMEOUT);
-            LOGGER.info("Done, temp archive created: " + cachedFile);
+        		targetFolder.mkdir();
+        		AbstractUnArchiver unarchiver = null;
+        		if (archiveType==ArchiveType.tgz) {
+        			unarchiver = new TarGZipUnArchiver();
+        		}
+        		else if (archiveType==ArchiveType.zip) {
+        			unarchiver = new ZipUnArchiver();
+        		}
+        		unarchiver.setSourceFile(cachedFile);
+        		unarchiver.setDestDirectory(targetFolder);
+        		unarchiver.enableLogging(plexusLogger);
+        		unarchiver.extract();
+        		LOGGER.info("Done, temp archive unpacked into: " + targetFolder);
 
-            // unzip
-            ConsoleLoggerManager manager = new ConsoleLoggerManager();
-            Logger plexusLogger = manager.getLoggerForComponent("archive-downloader");
-
-            targetFolder.mkdir();
-            AbstractUnArchiver unarchiver = null;
-            if (archiveType==ArchiveType.tgz) {
-                unarchiver = new TarGZipUnArchiver();
-            }
-            else if (archiveType==ArchiveType.zip) {
-                unarchiver = new ZipUnArchiver();
-            }
-            unarchiver.setSourceFile(cachedFile);
-            unarchiver.setDestDirectory(targetFolder);
-            unarchiver.enableLogging(plexusLogger);
-            unarchiver.extract();
-            LOGGER.info("Done, temp archive unpacked into: " + targetFolder);
-
-            cachedFile.delete();
+        		cachedFile.delete();
+        	}
+        	else {
+        		LOGGER.info("Using cached data: " + targetFolder.getAbsolutePath());
+        	}
+            return targetFolder;
         }
-        else {
-            LOGGER.info("Using cached data: " + targetFolder.getAbsolutePath());
-        }
-
-        return targetFolder;
-
     }
 }
