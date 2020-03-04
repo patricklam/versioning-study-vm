@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
+import java.util.List;
 
 import org.revapi.*;
 import org.revapi.java.JavaApiAnalyzer;
@@ -83,7 +84,35 @@ public class Main {
 
 		@Override
 		public void report(Report report) {
-			errorCount += report.getDifferences().size();
+			List<Difference> differences = report.getDifferences();
+			for(Difference d : differences) {
+				DifferenceSeverity binary = d.classification.get(CompatibilityType.BINARY);
+				DifferenceSeverity source = d.classification.get(CompatibilityType.SOURCE);
+				DifferenceSeverity semantic = d.classification.get(CompatibilityType.SEMANTIC);
+				DifferenceSeverity other = d.classification.get(CompatibilityType.OTHER);
+				DifferenceSeverity lub = merge(binary,source,semantic,other);
+				// Only consider breaking or potentially breaking changes
+				if(lub == DifferenceSeverity.BREAKING || lub == DifferenceSeverity.POTENTIALLY_BREAKING) {
+					errorCount++;
+//					System.out.println("NAME: " + d.name);
+//					System.out.println("DESCRIPTION: " + d.description);
+				}
+			}
+		}
+
+		private DifferenceSeverity merge(DifferenceSeverity... items) {
+			for(DifferenceSeverity d : items) {
+				if(d == DifferenceSeverity.BREAKING) {
+					return d;
+				}
+			}
+			for(DifferenceSeverity d : items) {
+				if(d == DifferenceSeverity.POTENTIALLY_BREAKING) {
+					return d;
+				}
+			}
+			// Ignore others
+			return DifferenceSeverity.NON_BREAKING;
 		}
 	}
 }
