@@ -1,5 +1,6 @@
 package contractstudy.diffrules;
 
+import contractstudy.ConstraintType;
 import contractstudy.ContractElement;
 import semverstudy.commons.Logging;
 import contractstudy.Preferences;
@@ -48,7 +49,7 @@ public class Utils {
 
 
     /**
-     * Return true if condition in second constrains has been only extended.
+     * Return true if condition in second constraint has been only extended.
      * The extension is checked by added logical condition.
      *
      * @param o1
@@ -214,6 +215,15 @@ public class Utils {
 
         return programVersionsByProgram;
 
+    }
+
+    public static boolean isNullable(ContractElement c) {
+        ConstraintType type = c.getKind();
+        return type == ConstraintType.JSR305Nullable ||
+                type == ConstraintType.JSR305CheckForNull ||
+                type == ConstraintType.JSR303Null ||
+                type == ConstraintType.FindBugsNullable ||
+                type == ConstraintType.JetBrainsNullable;
     }
 
 }

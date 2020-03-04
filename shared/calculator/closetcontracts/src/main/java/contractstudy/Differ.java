@@ -24,7 +24,7 @@ public class Differ {
     };
 
     /**
-     * Compare two lists of constraints. We uses lists as the order potenially matters.
+     * Compare two lists of constraints. We use lists as the order potenially matters.
      * Note that the method is not symmetric: the artefact associates with  constraints1 should be compatible
      * (substitutable by) the artefact associated with constraints2 !
      * @param constraints1

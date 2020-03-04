@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-
         <!-- dependencies used in commons start here -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>

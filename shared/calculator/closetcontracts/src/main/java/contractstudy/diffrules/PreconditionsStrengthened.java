@@ -25,9 +25,9 @@ public class PreconditionsStrengthened implements DiffRule {
         constraints1 = filter(constraints1,c -> c.getClassification()==ConstraintClassification.PRECONDITION);
         constraints2 = filter(constraints2,c -> c.getClassification()==ConstraintClassification.PRECONDITION);
 
-        // if preconditions are the sane, it is handled by a earlier rule
+        // if preconditions are the same, it is handled by a earlier rule
         if (constraints2.size() > 0 && constraints1.size() <= constraints2.size()) {
-            // check containment, by lax - do not check whether additionalInfo field matches
+            // check containment, be lax - do not check whether additionalInfo field matches
             // complexity is terrible, but lists will be very small
             boolean allFound = true;
             for (ContractElement c1:constraints1) {
