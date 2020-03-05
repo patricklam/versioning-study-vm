@@ -83,27 +83,6 @@
 	]
     },
     {
-	"name": "jmeter",
-	"url": "http://jmeter.apache.org/",
-	"releases": "https://archive.apache.org/dist/jmeter/source/",
-	"type": "zip",
-	"build": "gradlew",
-	"versions": [
-	    {
-		"version": "5.2",
-		"source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.2_src.tgz",
-		"binary": "",
-		"dir": "apache-jmeter-5.2"
-	    },
-	    {
-		"version": "5.2.1",
-		"source": "https://archive.apache.org/dist/jmeter/source/apache-jmeter-5.2.1_src.tgz",
-		"binary": "",
-		"dir": "apache-jmeter-5.2.1"
-	    }	    
-	]
-    },
-    {
 	"name": "jodatime",
 	"url": "https://www.joda.org/joda-time/",
 	"releases": "https://github.com/JodaOrg/joda-time/releases",
@@ -188,23 +167,46 @@
 	]
     },
     {
-	"name": "appformer",
-	"url": "https://github.com/kiegroup/appformer",
-	"releases": "https://github.com/kiegroup/appformer/releases",
+	"name": "slf4j",
+	"url": "http://www.slf4j.org/index.html",
+	"releases": "https://github.com/qos-ch/slf4j/releases",
 	"type": "tgz",
 	"build": "mvn",
 	"versions": [
 	    {
-		"version": "7.33.0.Final",
-		"source": "https://github.com/kiegroup/appformer/archive/7.33.0.Final.tar.gz",
-		"binary": "",
-		"dir": "appformer-7.33.0.Final"
+		"version": "1.7.29",
+		"source": "https://github.com/qos-ch/slf4j/archive/v_1.7.29.tar.gz",
+		"binary": "https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.29/slf4j-api-1.7.29.jar",
+		"patch": "../shared/patches/slf4j-v_1.7.29.patch",
+		"dir": "slf4j-v_1.7.29"
 	    },
 	    {
-		"version": "7.5.0.Final",
-		"source": "https://github.com/kiegroup/appformer/archive/7.5.0.Final.tar.gz",
-		"binary": "",
-		"dir": "appformer-7.5.0.Final"
+		"version": "1.7.30",
+		"source": "https://github.com/qos-ch/slf4j/archive/v_1.7.30.tar.gz",
+		"binary": "https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar",
+		"patch": "../shared/patches/slf4j-v_1.7.30.patch",
+		"dir": "slf4j-v_1.7.30"
+	    }
+	]
+    },
+    {
+	"name": "spring-security",
+	"url": "https://spring.io/projects/spring-security",
+	"releases": "https://github.com/spring-projects/spring-security/releases",
+	"type": "tgz",
+	"build": "gradlew",
+	"versions": [
+	    {
+		"version": "5.2.2.RELEASE",
+		"source": "https://github.com/spring-projects/spring-security/archive/5.2.2.RELEASE.tar.gz",
+		"binary": "https://repo1.maven.org/maven2/org/springframework/security/spring-security-core/5.2.2.RELEASE/spring-security-core-5.2.2.RELEASE.jar",
+		"dir": "spring-security-5.2.2.RELEASE"
+	    },
+	    {
+		"version": "5.3.0.RELEASE",
+		"source": "https://github.com/spring-projects/spring-security/archive/5.3.0.RELEASE.tar.gz",
+		"binary": "https://repo1.maven.org/maven2/org/springframework/security/spring-security-core/5.2.2.RELEASE/spring-security-core-5.3.0.RELEASE.jar",
+		"dir": "spring-security-5.3.0.RELEASE"
 	    }
 	]
     }
