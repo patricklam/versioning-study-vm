@@ -1,4 +1,25 @@
     {
+	"name": "maven-scm",
+	"url": "https://maven.apache.org/scm/index.html",
+	"releases": "https://archive.apache.org/dist/maven/scm/",
+	"type": "zip",
+	"build": "mvn",
+	"versions": [
+	    {
+		"version": "1.9.1",
+		"source": "https://archive.apache.org/dist/maven/scm/maven-scm-1.9.1-source-release.zip",
+		"binary": "",
+		"dir": "maven-scm-1.9.1"
+	    },
+	    {
+		"version": "1.11.2",
+		"source": "https://archive.apache.org/dist/maven/scm/maven-scm-1.11.2-source-release.zip",
+		"binary": "",
+		"dir": "maven-scm-1.11.2"
+	    }
+	]
+    },
+    {
 	"name": "appformer",
 	"url": "https://github.com/kiegroup/appformer",
 	"releases": "https://github.com/kiegroup/appformer/releases",
