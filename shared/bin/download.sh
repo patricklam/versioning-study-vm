@@ -17,6 +17,8 @@ fi
 INPUT=$1
 for c in $(jq '.[].versions[].source' < "$INPUT"); do
   cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
+  echo cc is $cc, target is $TARGET
+  exit 1
   if [ -z $TARGET ] || [[ $cc == $TARGET* ]]; then
     echo downloading $cc...    
     rm $cc  
