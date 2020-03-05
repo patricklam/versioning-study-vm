@@ -1,6 +1,6 @@
 PL:
-* implement for-all-benchmarks and for-one-benchmark mode for run-infer, fbinfer_diffs scripts, as well as skip functionality for run-infer
-* fbinfer: look at output, generate output in json
+* implement skip functionality from project.json for run-infer
+* fbinfer: look at output, generate output in json format
 * sample output format: add line number and method name as optional fields
 
 decisions from 3/5:

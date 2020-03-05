@@ -18,7 +18,7 @@ import json
 import sys
 from diff_calculator import retrieve_bases, compute_matching_line
 
-def retrieve_outputs(projects_file, proj):
+def retrieve_output_fns(projects_file, proj):
     with open(projects_file, 'r') as pf:
         for p in json.loads(pf.read()):
             if (p['name'] == proj):
@@ -26,12 +26,16 @@ def retrieve_outputs(projects_file, proj):
                         path.join('output', 'fbinfer-'+p['versions'][1]['dir']))
     return None
 
-def main(argv):
-    projects_file = argv[1]
-    # TODO if len(argv) == 1 then iterate over all projects
-    proj = argv[2]
+def process(projects_file, proj):
     (base1, base2) = retrieve_bases(projects_file, proj)
-    (output1, output2) = retrieve_outputs(projects_file, proj)
+    (output1, output2) = retrieve_output_fns(projects_file, proj)
+    if not path.exists(output1):
+        print ("FB infer output {} missing".format(output1))
+        return
+    if not path.exists(output2):
+        print ("FB infer output {} missing".format(output2))
+        return
+
     bugs1 = []
     bugs2 = []
     with open(path.join(output1, 'report.json')) as r1h:
@@ -71,6 +75,23 @@ def main(argv):
                 print ('file {} missing from version 1: {}, v2 has {} bugs'.format(reported_file, base1, len(rf_bugs2)))
             if not path.exists(path.join(base2, reported_file)):
                 print ('file {} missing from version 2: {}, v1 has {} bugs'.format(reported_file, base2, len(rf_bugs1)))
+
+def main(argv):
+    if len(argv) < 2:
+        print ("Usage: {} ../shared/projects.json [benchmark]".format(argv[0]))
+        sys.exit(1)
+    projects_file = argv[1]
+    if len(argv) == 2:
+        projs = []
+        with open(projects_file, 'r') as pf:
+            for p in json.loads(pf.read()):
+                projs.append(p['name'])
+        for proj in projs:
+            print ('processing project {}'.format(proj))
+            process(projects_file, proj)
+    else:
+        proj = argv[2]
+        process(projects_file, proj)
 
 if __name__ == "__main__":
     main(sys.argv)
