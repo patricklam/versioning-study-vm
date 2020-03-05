@@ -11,23 +11,27 @@ if [ -z $1 ]; then
 fi
 
 if [ -n $2 ]; then
-	TARGET=$2
+  TARGET=$2
 fi
 
 INPUT=$1
 echo Running 'gradlew clean' on gradlew projects...
 for c in $(jq '.[] | select(.build == "gradlew").versions[].dir' < "$INPUT"); do
-	cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
-	if [ -d $cc ] && [ -z $TARGET ] || [ $TARGET == $cc ]; then
-    ( cd $cc; ./gradlew clean )
-	fi
+  cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
+  if [ -d $cc ]; then
+     if [ -z $TARGET ] || [ $TARGET = $cc ]; then
+       ( cd $cc; ./gradlew clean )
+     fi
+  fi
 done
 
 echo Running 'mvn clean' on mvn projects...
 for c in $(jq '.[] | select(.build == "mvn").versions[].dir' < "$INPUT"); do
-	cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
-	if [ -d $cc ] && [ -z $TARGET ] || [ $TARGET == $cc ]; then
-    ( cd $cc; mvn clean )
-	fi
+  cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
+  if [ -d $cc ]; then
+     if [ -z $TARGET ] || [ $TARGET = $cc ]; then
+       ( cd $cc; mvn clean )
+     fi
+  fi
 done
 
