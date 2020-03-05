@@ -1,6 +1,6 @@
-diff -ru slf4j-v_1.7.30/pom.xml slf4j-v_1.7.30-patched/pom.xml
---- slf4j-v_1.7.30/pom.xml	2020-03-05 02:06:31.799582997 +0000
-+++ slf4j-v_1.7.30-patched/pom.xml	2020-03-05 02:04:16.467283000 +0000
+diff -ru slf4j-v_1.7.29/pom.xml slf4j-v_1.7.29-patched/pom.xml
+--- slf4j-v_1.7.29/pom.xml	2020-03-05 02:06:31.799582997 +0000
++++ slf4j-v_1.7.29-patched/pom.xml	2020-03-05 02:04:16.467283000 +0000
 @@ -33,7 +33,7 @@
    </scm>  
  
