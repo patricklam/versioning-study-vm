@@ -12,7 +12,7 @@ For instance, jsoup 1.10.1 gains two FB Infer warnings, one resource leak and on
 
 * shared/bin/clean.sh: runs mvn clean/gradlew clean on all projects/selected project.
 
-* shared/bin/download.sh: downloads source code as specified by projects.json for all projects/selected project.
+* shared/bin/download.sh: downloads and unpacks source code as specified by projects.json for all projects/selected project.
 
 * shared/bin/run-infer.sh: runs FB Infer on all projects/selected project and puts output in benchmarks/output
 
