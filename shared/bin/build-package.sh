@@ -30,7 +30,7 @@ for c in $(jq '.[] | select(.build == "mvn").versions[].dir' < "$INPUT"); do
   cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
   if [ -d $cc ]; then
      if [ -z $TARGET ] || [[ $cc == $TARGET* ]]; then
-       ( cd $cc; mvn package )
+       ( cd $cc; mvn package -Drat.skip=true )
      fi
   fi
 done
