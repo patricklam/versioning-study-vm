@@ -34,5 +34,7 @@ done
 
 for p in $(jq "$PQUERY" < "$INPUT"); do
   pp=$(sed -e 's/^"//' -e 's/"$//' <<<"$p")
-  patch -p 0 < $pp
+  if [[ $pp != "null" ]]; then
+    patch -p 0 < $pp
+  fi
 done
