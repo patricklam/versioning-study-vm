@@ -195,6 +195,7 @@
 	"releases": "https://github.com/spring-projects/spring-security/releases",
 	"type": "tgz",
 	"build": "gradlew",
+	"skip": ["fbinfer"],
 	"versions": [
 	    {
 		"version": "5.2.2.RELEASE",
