@@ -16,6 +16,8 @@ For instance, jsoup 1.10.1 gains two FB Infer warnings, one resource leak and on
 
 * shared/bin/build-package.sh: runs mvn build/gradlew build as specified by projects.json.
 
+* shared/bin/run-tests.sh: asks maven/gradle to run provided test suite and puts exit code in benchmark-test-result.out.
+
 * shared/bin/run-infer.sh: runs FB Infer on all projects/selected project and puts output in benchmarks/output
 
 * shared/bin/fbinfer_diffs.py: diffs FB Infer output in benchmarks/output and outputs fbinfer-benchmark.json diffs.

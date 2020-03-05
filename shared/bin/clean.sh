@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ "benchmarks" != $(basename $(pwd)) ]; then
-  echo "Must run from 'benchmarks' directory (inside the VM)!"
+if [[ -z $1 ]] || [[ $(basename $1) != "projects.json" ]]; then
+  echo Usage: $0 ../shared/projects.json [benchmark]
   exit 1
 fi
 
-if [ -z $1 ]; then
-  echo Usage: $0 ../shared/projects.json
+if [ "benchmarks" != $(basename $(pwd)) ]; then
+  echo "Must run from 'benchmarks' directory (inside the VM)!"
   exit 1
 fi
 
