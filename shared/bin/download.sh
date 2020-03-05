@@ -1,28 +1,33 @@
 #!/bin/bash
 
-if [ -z $1 ]; then
-  echo Usage: $0 projects.json
-  exit 1
-fi
-
 if [ "benchmarks" != $(basename $(pwd)) ]; then
-  echo Must run from 'benchmarks' directory!
+  echo "Must run from 'benchmarks' directory (inside the VM)!"
   exit 1
 fi
 
-# TODO: parameter 2 can be a specific benchmark to download
-# TODO: delete the old version, only untar the files we download
+if [ -z $1 ]; then
+  echo Usage: $0 ../shared/projects.json
+  exit 1
+fi
+
+if [ -n $2 ]; then
+  TARGET=$2
+fi
+
 INPUT=$1
 for c in $(jq '.[].versions[].source' < "$INPUT"); do
-  /usr/bin/wget -nc `sed -e 's/^"//' -e 's/"$//' <<<"$c"`
-done
-
-for tar in *.tgz *.tar.gz; do
-  tar xzf $tar
-done
-
-for zip in *.zip; do
-  unzip $zip
+  cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
+  if [ -z $TARGET ] || [[ $cc == $TARGET* ]]; then
+    echo downloading $cc...    
+    rm $cc  
+    /usr/bin/wget -nc $cc
+    if [[ $cc == *.tar.gz ]] -o [[ $cc == *.tgz ]]; then
+        tar xzf $cc
+    fi
+    if [[ $cc == *.zip ]]; then
+        unzip $cc
+    fi
+  fi
 done
 
 # TODO apply patches as per json
