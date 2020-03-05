@@ -4,6 +4,8 @@ sudo apt-get upgrade
 sudo apt-get install -y openjdk-8-jdk junit4 maven gradle
 sudo apt-get install -y xauth git emacs-nox unzip jq
 sudo apt-get upgrade -y
+# for maven-scm benchmark:
+sudo apt-get install subversion
 
 ( VERSION=0.17.0; \
 curl -sSL "https://github.com/facebook/infer/releases/download/v$VERSION/infer-linux64-v$VERSION.tar.xz" \

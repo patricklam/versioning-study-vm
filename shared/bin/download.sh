@@ -25,3 +25,7 @@ for zip in *.zip; do
   unzip $zip
 done
 
+# TODO apply patches as per json
+# for p in ../shared/patches/*.patch; do
+#  patch -p 1 < ~/shared/patches/slf4j-v_1.7.29.patch
+# done

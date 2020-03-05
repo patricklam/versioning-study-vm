@@ -1,3 +1,9 @@
 PL:
 * implement for-all-benchmarks and for-one-benchmark mode for scripts
-* fbinfer: look at output, generate output in proper format
+* download script: re-test, implement functionality to apply patches
+* implement build script for maven-scm's benefit
+* fbinfer: look at output, generate output in json
+* sample output format: add line number and method name as optional fields
+
+decisions from 3/5:
+let's go with manual version selection for now, aim to automate version selection and source/binary locating later
