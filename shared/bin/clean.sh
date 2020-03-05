@@ -10,7 +10,7 @@ if [ -z $1 ]; then
   exit 1
 fi
 
-if [ -n $2 ]; then
+if [[ ! -z "$2" ]]; then
   TARGET=$2
 fi
 

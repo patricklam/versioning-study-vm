@@ -10,29 +10,29 @@ if [ -z $1 ]; then
   exit 1
 fi
 
-if [ -n $2 ]; then
+SQUERY=".[].versions[].source"
+PQUERY=".[].versions[].patch"
+if [[ ! -z "$2" ]]; then
   TARGET=$2
+  # TODO (probably never): parse TARGET into benchmark-version and select on that
+  SQUERY=".[] | select(.name == \"$TARGET\").versions[].source"
+  PQUERY=".[] | select(.name == \"$TARGET\").versions[].patch"
 fi
 
 INPUT=$1
-for c in $(jq '.[].versions[].source' < "$INPUT"); do
+for c in $(jq "$SQUERY" < "$INPUT"); do
   cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
-  echo cc is $cc, target is $TARGET
-  exit 1
-  if [ -z $TARGET ] || [[ $cc == $TARGET* ]]; then
-    echo downloading $cc...    
-    rm $cc  
-    /usr/bin/wget -nc $cc
-    if [[ $cc == *.tar.gz ]] -o [[ $cc == *.tgz ]]; then
-        tar xzf $cc
-    fi
-    if [[ $cc == *.zip ]]; then
-        unzip $cc
-    fi
+  /usr/bin/wget -nc $cc
+  fn="${cc##*/}"
+  if [[ $fn == *.tar.gz ]] || [[ $fn == *.tgz ]]; then
+      tar xzf $fn
+  fi
+  if [[ $fn == *.zip ]]; then
+      unzip -o $fn
   fi
 done
 
-# TODO apply patches as per json
-# for p in ../shared/patches/*.patch; do
-#  patch -p 1 < ~/shared/patches/slf4j-v_1.7.29.patch
-# done
+for p in $(jq "$PQUERY" < "$INPUT"); do
+  pp=$(sed -e 's/^"//' -e 's/"$//' <<<"$p")
+  patch -p 0 < $pp
+done
