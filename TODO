@@ -1,6 +1,5 @@
 PL:
-* implement skip functionality from project.json for run-infer
-* fbinfer: look at output, generate output in json format
+* fbinfer: generate output in json format, look at output
 * sample output format: add line number and method name as optional fields
 
 decisions from 3/5:

@@ -18,8 +18,7 @@ INPUT=$1
 
 process() {
   mkdir -p output/fbinfer
-  # TODO look for 'skip': ['fbinfer'] tag in $INPUT
-  for c in $(jq '.[] | select(.build == "gradlew").versions[].dir' < "$INPUT"); do
+  for c in $(jq '.[] | select((.build == "gradlew") and .skip != ["fbinfer"]).versions[].dir' < "$INPUT"); do
     cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
     if [ -d $cc ]; then
        if [ -z $TARGET ] || [[ $cc == $TARGET* ]]; then
@@ -32,7 +31,7 @@ process() {
     fi
   done
 
-  for c in $(jq '.[] | select(.build == "mvn").versions[].dir' < "$INPUT"); do
+  for c in $(jq '.[] | select((.build == "mvn") and .skip != ["fbinfer"]).versions[].dir' < "$INPUT"); do
     cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
     if [ -d $cc ]; then
        if [ -z $TARGET ] || [[ $cc == $TARGET* ]]; then
