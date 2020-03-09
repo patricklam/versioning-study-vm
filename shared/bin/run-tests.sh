@@ -30,7 +30,7 @@ for c in $(jq '.[] | select(.build == "mvn").versions[].dir' < "$INPUT"); do
   cc=$(sed -e 's/^"//' -e 's/"$//' <<<"$c")
   if [ -d $cc ]; then
      if [ -z $TARGET ] || [[ $cc == $TARGET* ]]; then
-       ( cd $cc; ./mvn test >& ../$(basename $(pwd))-test-output; echo $? > ../$(basename $(pwd))-test-result.out )
+       ( cd $cc; mvn test >& ../$(basename $(pwd))-test-output; echo $? > ../$(basename $(pwd))-test-result.out )
      fi
   fi
 done
