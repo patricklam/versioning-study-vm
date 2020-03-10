@@ -16,6 +16,15 @@ public class Project {
     private ArchiveType type = null;
     private ProjectVersion[] versions = null;
     private String build = null;
+    private String[] skip = null;
+
+    public String[] getSkip() {
+        return skip;
+    }
+
+    public void setSkip(String[] skip) {
+        this.skip = skip;
+    }
 
     public String getBuild() {
         return build;
@@ -75,12 +84,15 @@ public class Project {
                 Objects.equals(releases, project.releases) &&
                 type == project.type &&
                 Arrays.equals(versions, project.versions) &&
-                Objects.equals(build, project.build);
+                Objects.equals(build, project.build) &&
+                Arrays.equals(skip, project.skip);
     }
+
     @Override
     public int hashCode() {
         int result = Objects.hash(name, url, releases, type, build);
         result = 31 * result + Arrays.hashCode(versions);
+        result = 31 * result + Arrays.hashCode(skip);
         return result;
     }
 }

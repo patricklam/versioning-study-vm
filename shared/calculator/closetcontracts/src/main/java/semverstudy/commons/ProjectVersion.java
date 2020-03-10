@@ -13,6 +13,15 @@ public class ProjectVersion {
     private URL source = null;
     private URL binary = null;
     private String dir = null;
+    private String patch = null;
+
+    public String getPatch() {
+        return patch;
+    }
+
+    public void setPatch(String patch) {
+        this.patch = patch;
+    }
 
     public String getVersion() {
         return version;
@@ -46,21 +55,21 @@ public class ProjectVersion {
         this.dir = dir;
     }
 
+
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-			return true;
-		}
-        if (o == null || getClass() != o.getClass()) {
-			return false;
-		}
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
         ProjectVersion that = (ProjectVersion) o;
         return Objects.equals(version, that.version) &&
                 Objects.equals(source, that.source) &&
-                Objects.equals(dir, that.dir);
+                Objects.equals(binary, that.binary) &&
+                Objects.equals(dir, that.dir) &&
+                Objects.equals(patch, that.patch);
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(version, source, dir);
+        return Objects.hash(version, source, binary, dir, patch);
     }
 }
