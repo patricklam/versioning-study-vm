@@ -10,6 +10,7 @@ import contractstudy.extractors.*;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import semverstudy.commons.*;
+import semverstudy.commons.DiffResult;
 import semverstudy.commons.Downloader;
 import java.io.*;
 import java.nio.file.FileVisitResult;
@@ -27,6 +28,11 @@ import java.util.stream.Stream;
  * @author jens dietrich
  */
 public class CompatibilityAnalysis {
+
+    public static final String TOOL_NAME = "closetcontract-analyser";
+    public static final String POSTCONDITION_REMOVED = "POSTCONDITION_REMOVED";
+    public static final String PRECONDITION_ADDED = "PRECONDITION_ADDED";
+    public static final String MISSING_INFORMATION = "n/a";
 
     public static final Extractor[] EXTRACTORS = {
             new JSR303Extractor(),
@@ -56,24 +62,42 @@ public class CompatibilityAnalysis {
         LOGGER.info("" + projects.length + " projects found");
 
         File output = new File(args[1]);
-        List<String> records = new ArrayList<>();
+        List<DiffResult> results = new ArrayList<>();
+
 
         ResultListener reporter = new ResultListener() {
+            DiffResult currentResult = null;
             @Override
-            public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, String location, String issue, String detail) {
+            public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, String issue, String detail) {
                 LOGGER.info("Incompatible change for in project " + project.getName());
                 LOGGER.info("\tversion 1: " + projectVersion1.getVersion());
                 LOGGER.info("\tversion 2: " + projectVersion2.getVersion());
-                LOGGER.info("\tlocation: " + location);
+                LOGGER.info("\tlocation: " + location.getCu() + "::" + location.getMethodDeclaration());
                 LOGGER.info("\tviolation: " + issue);
                 LOGGER.info("\tdetail: " + detail);
 
-                records.add(""+project.getName()+"-"+projectVersion1.getVersion()+","+project.getName()+"-"+projectVersion2.getVersion()+","+issue+",+1");
+                if (currentResult==null || !currentResult.getName().equals(project.getName()) || !currentResult.getVersion1().equals(projectVersion1.getVersion()) || !currentResult.getVersion2().equals(projectVersion2.getVersion())) {
+                    currentResult = new DiffResult();
+                    currentResult.setName(project.getName());
+                    currentResult.setVersion1(projectVersion1.getVersion());
+                    currentResult.setVersion2(projectVersion2.getVersion());
+                    results.add(currentResult);
+                }
+
+                DiffIssue diffIssue = new DiffIssue();
+                diffIssue.setTool(TOOL_NAME);
+                diffIssue.setKey(issue);
+                diffIssue.setFile(location.getCu());
+                diffIssue.setMethod(location.getMethodDeclaration());
+                diffIssue.setDirection("+1"); // TODO need some clarification here from Patrick
+                diffIssue.setLine(location.getLineNo()==-1?MISSING_INFORMATION:(""+location.getLineNo()));
+                currentResult.getIssues().add(diffIssue);
+
+                // records.add(""+project.getName()+"-"+projectVersion1.getVersion()+","+project.getName()+"-"+projectVersion2.getVersion()+","+issue+",+1");
             }
         };
         analyse(projects, reporter);
-
-        FileUtils.writeLines(output,records);
+        DiffResultExporter.writeResults(results,output);
         LOGGER.info("Results written to " + output.getAbsolutePath());
     }
 
@@ -129,11 +153,11 @@ public class CompatibilityAnalysis {
     private static void diffAndReport(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, List<ContractElement> contracts1, List<ContractElement> contracts2,ResultListener reporter) {
 
         // index contracts, keys are combinations of cu name, method name and signature
-        Multimap<String, ContractElement> indexedContracts1 = indexContracts(contracts1);
-        Multimap<String, ContractElement> indexedContracts2 = indexContracts(contracts2);
+        Multimap<Location, ContractElement> indexedContracts1 = indexContracts(contracts1);
+        Multimap<Location, ContractElement> indexedContracts2 = indexContracts(contracts2);
 
-        Set<String> locations = Sets.union(indexedContracts1.keySet(),indexedContracts2.keySet());
-        for (String location:locations) {
+        Set<Location> locations = Sets.union(indexedContracts1.keySet(),indexedContracts2.keySet());
+        for (Location location:locations) {
             Collection<ContractElement> contractsAtLocation1 = indexedContracts1.get(location);
             if (contractsAtLocation1==null) contractsAtLocation1 = Collections.EMPTY_SET;
             Collection<ContractElement> contractsAtLocation2 = indexedContracts2.get(location);
@@ -145,26 +169,26 @@ public class CompatibilityAnalysis {
         }
     }
 
-    private static void checkForRemovedPostconditions(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, String location, Collection<ContractElement> contractsAtLocation1, Collection<ContractElement> contractsAtLocation2,ResultListener reporter) {
+    private static void checkForRemovedPostconditions(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, Collection<ContractElement> contractsAtLocation1, Collection<ContractElement> contractsAtLocation2,ResultListener reporter) {
         Collection<ContractElement> postConditions1 = contractsAtLocation1.stream().filter(ce -> ce.getClassification()==ConstraintClassification.POSTCONDITION).collect(Collectors.toSet());
         Collection<ContractElement> postConditions2 = contractsAtLocation2.stream().filter(ce -> ce.getClassification()==ConstraintClassification.POSTCONDITION).collect(Collectors.toSet());
 
         for (ContractElement pc1:postConditions1) {
             boolean match = postConditions2.stream().anyMatch(pc2 -> Utils.unchanged(pc1,pc2,true));
             if (!match) {
-                reporter.resultFound(project,projectVersion1,projectVersion2,location,"closetcontracts-postcondition-removed",pc1.toString());
+                reporter.resultFound(project,projectVersion1,projectVersion2,location,POSTCONDITION_REMOVED,pc1.toString());
             }
         }
     }
 
-    private static void checkForAddedPreconditions(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, String location, Collection<ContractElement> contractsAtLocation1, Collection<ContractElement> contractsAtLocation2,ResultListener reporter) {
+    private static void checkForAddedPreconditions(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, Collection<ContractElement> contractsAtLocation1, Collection<ContractElement> contractsAtLocation2,ResultListener reporter) {
         Collection<ContractElement> preConditions1 = contractsAtLocation1.stream().filter(ce -> ce.getClassification()==ConstraintClassification.PRECONDITION).collect(Collectors.toSet());
         Collection<ContractElement> preConditions2 = contractsAtLocation2.stream().filter(ce -> ce.getClassification()==ConstraintClassification.PRECONDITION).collect(Collectors.toSet());
 
         for (ContractElement pc2:preConditions2) {
             boolean match = preConditions1.stream().anyMatch(pc1 -> Utils.unchanged(pc1,pc2,true));
             if (!match) {
-                reporter.resultFound(project,projectVersion1,projectVersion2,location,"closetcontracts-precondition-added",pc2.toString());
+                reporter.resultFound(project,projectVersion1,projectVersion2,location,PRECONDITION_ADDED,pc2.toString());
             }
         }
     }
@@ -179,14 +203,10 @@ public class CompatibilityAnalysis {
         System.out.println("\tdetail: " + detail);
     }
 
-    private static Multimap<String, ContractElement> indexContracts(List<ContractElement> contracts) {
-        Multimap<String, ContractElement> indexedContracts = HashMultimap.create();
+    private static Multimap<Location, ContractElement> indexContracts(List<ContractElement> contracts) {
+        Multimap<Location, ContractElement> indexedContracts = HashMultimap.create();
         for (ContractElement contractElement:contracts) {
-            String key = contractElement.getCuName();
-            if (contractElement.getConstraintedArtefact()==ConstraintedArtefact.METHOD || contractElement.getConstraintedArtefact()==ConstraintedArtefact.METHOD_PARAMETER) {
-                key = key + "::" + contractElement.getMethodDeclaration();
-            }
-            indexedContracts.put(key,contractElement);
+            indexedContracts.put(Location.newFrom(contractElement),contractElement);
         }
         return indexedContracts;
     }

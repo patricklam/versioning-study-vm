@@ -1,6 +1,7 @@
 package test.semverstudy.compatibilityanalysis;
 
 import semverstudy.closetcontracts.CompatibilityAnalysis;
+import semverstudy.closetcontracts.Location;
 import semverstudy.closetcontracts.ResultListener;
 import semverstudy.commons.Project;
 import org.junit.*;
@@ -53,12 +54,13 @@ public class TestCompatibilityAnalysis {
         AtomicBoolean success = new AtomicBoolean(false);
         ResultListener reporter = new ResultListener() {
             @Override
-            public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, String location, String violationType, String detail) {
+            public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, String violationType, String detail) {
                 if (
-                    location.equals("com.foo/ClassDroppingPostCondition.java::foo(int)")
+                    location.getCu().equals("com.foo/ClassDroppingPostCondition.java")
+                    && location.getMethodDeclaration().equals("foo(int)")
                     && projectVersion1.getVersion().equals("1.0.0")
                     && projectVersion2.getVersion().equals("2.0.0")
-                    && violationType.equals("closetcontracts-postcondition-removed")
+                    && violationType.equals(CompatibilityAnalysis.POSTCONDITION_REMOVED)
                 ) {
                     success.set(true);
                 }
@@ -73,12 +75,13 @@ public class TestCompatibilityAnalysis {
         AtomicBoolean success = new AtomicBoolean(false);
         ResultListener reporter = new ResultListener() {
             @Override
-            public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, String location, String violationType, String detail) {
+            public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, String violationType, String detail) {
                 if (
-                        location.equals("com.foo/ClassIntroducingPreCondition.java::foo(int)")
-                                && projectVersion1.getVersion().equals("1.0.0")
-                                && projectVersion2.getVersion().equals("2.0.0")
-                                && violationType.equals("closetcontracts-precondition-added")
+                    location.getCu().equals("com.foo/ClassIntroducingPreCondition.java")
+                    && location.getMethodDeclaration().equals("foo(int)")
+                    && projectVersion1.getVersion().equals("1.0.0")
+                    && projectVersion2.getVersion().equals("2.0.0")
+                    && violationType.equals(CompatibilityAnalysis.PRECONDITION_ADDED)
                 ) {
                     success.set(true);
                 }

@@ -9,5 +9,5 @@ import semverstudy.commons.ProjectVersion;
  */
 public interface ResultListener {
 
-    void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, String location, String violationType, String detail);
+    void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, String violationType, String detail);
 }
