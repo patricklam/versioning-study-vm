@@ -64,13 +64,15 @@ public class Downloader {
             throw new IllegalArgumentException("Cannot infer archive format from URL " + url);
         }
 
-        // Copy URL to cached file
-        File cachedFile = new File(CACHE,cachedFileName);
-        LOGGER.info("Fetching data from URL: " + url);
-        FileUtils.copyURLToFile(url, cachedFile, CONNECT_TIMEOUT, READ_TIMEOUT);
-        LOGGER.info("Done, temp archive created: " + cachedFile);
         //
         if(targetFolderName == null) {
+            // Copy URL to cached file
+            File cachedFile = new File(CACHE,cachedFileName);
+
+            // do download
+            LOGGER.info("Fetching data from URL: " + url);
+            FileUtils.copyURLToFile(url, cachedFile, CONNECT_TIMEOUT, READ_TIMEOUT);
+            LOGGER.info("Done, temp archive created: " + cachedFile);
         	// Must be jar
         	return cachedFile;
         } else {
@@ -78,6 +80,13 @@ public class Downloader {
         	File targetFolder = new File(CACHE,targetFolderName);
         	//
         	if (!targetFolder.exists()) {
+
+        	    // do download
+                File cachedFile = new File(CACHE,cachedFileName);
+                LOGGER.info("Fetching data from URL: " + url);
+                FileUtils.copyURLToFile(url, cachedFile, CONNECT_TIMEOUT, READ_TIMEOUT);
+                LOGGER.info("Done, temp archive created: " + cachedFile);
+
         		// unzip
         		ConsoleLoggerManager manager = new ConsoleLoggerManager();
         		Logger plexusLogger = manager.getLoggerForComponent("archive-downloader");
