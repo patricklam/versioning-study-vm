@@ -11,6 +11,7 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import contractstudy.ContractElement;
 import contractstudy.ExtractionListener;
 import contractstudy.Preferences;
+import semverstudy.closetcontracts.Location;
 
 /**
  * Abstract superclass for visitors for method nodes in the AST, used to collect invocations of API methods
@@ -67,6 +68,10 @@ public abstract class AbstractMethodVisitor extends VoidVisitorAdapter<Object> {
 		isAbstractMethod = ModifierSet.isAbstract(modifiers);
 		if (includePrivateMethods || isInterface || ModifierSet.isPublic(modifiers) || ModifierSet.isProtected(modifiers)) {
 			this.methodDeclaration = Utils.trimRetType(methodDeclr.getDeclarationAsString(false, false, false)); // flags: incl modifiers , incl throws
+
+			Location location = new Location(this.cuName,this.methodDeclaration, methodDeclr.getBeginLine());
+			this.consumer.locationVisited(location);
+
 			super.visit(methodDeclr, arg);
 		}
 	}
@@ -78,6 +83,10 @@ public abstract class AbstractMethodVisitor extends VoidVisitorAdapter<Object> {
 		isAbstractMethod = false;
         if (includePrivateMethods || isInterface || ModifierSet.isPublic(modifiers) || ModifierSet.isProtected(modifiers)) {
             this.methodDeclaration = constructorDeclr.getDeclarationAsString(false, false, false);
+
+            Location location = new Location(this.cuName,this.methodDeclaration,constructorDeclr.getBeginLine());
+			this.consumer.locationVisited(location);
+
             super.visit(constructorDeclr, arg);
         }
 	}

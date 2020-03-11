@@ -7,7 +7,6 @@ import com.google.common.collect.Sets;
 import contractstudy.*;
 import contractstudy.diffrules.*;
 import contractstudy.extractors.*;
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import semverstudy.commons.*;
 import semverstudy.commons.DiffResult;
@@ -113,8 +112,11 @@ public class CompatibilityAnalysis {
             AtomicInteger parsedCUCounter = new AtomicInteger(0);
             AtomicInteger parserFailedCUCounter = new AtomicInteger(0);
             AtomicInteger parsedProgramVersionCounter = new AtomicInteger(0);
+
             List<ContractElement> contractsOfPreviousVersion = null;
+            Set<Location> locationsInPreviousVersion = null;
             ProjectVersion previousVersion = null;
+
             // NOTE: VERSIONS ARE PROCESSED AND DIFFED IN THE ORDER AS DEFINED IN THE JSON FILE
             for (ProjectVersion projectVersion : project.getVersions()) {
                 parsedProgramVersionCounter.incrementAndGet();
@@ -127,15 +129,18 @@ public class CompatibilityAnalysis {
                         parserFailedCUCounter.incrementAndGet();
                     }
                 };
-                findContractElementsinProject(projectVersionFolder, collector, project.getName(), "foo-version", parsedCUCounter);
+                findContractElementsinProject(projectVersionFolder, collector, project.getName(), projectVersion.getVersion(), parsedCUCounter);
                 System.out.println("Processed " + progressCounter.incrementAndGet() + "/" + total + ": " + projectVersionFolder.getAbsolutePath() + " -- " + collector.getContractElements().size() + " contracts found");
                 constraintCounter.addAndGet(collector.getContractElements().size());
 
                 List<ContractElement> contracts = collector.getContractElements();
+                Set<Location> locations = collector.getVisitedLocations();
                 if (contractsOfPreviousVersion!=null) {
-                    diffAndReport(project,previousVersion,projectVersion,contractsOfPreviousVersion,contracts,reporter);
+                    assert locationsInPreviousVersion!=null;
+                    diffAndReport(project,previousVersion,projectVersion,contractsOfPreviousVersion,contracts,locationsInPreviousVersion,locations,reporter);
                 }
                 previousVersion = projectVersion;
+                locationsInPreviousVersion = locations;
                 contractsOfPreviousVersion = contracts;
             }
         }
@@ -150,22 +155,28 @@ public class CompatibilityAnalysis {
         //        LOGGER.info("\tcontracts found: " + constraintCounter.intValue());
     }
 
-    private static void diffAndReport(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, List<ContractElement> contracts1, List<ContractElement> contracts2,ResultListener reporter) {
+    private static void diffAndReport(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, List<ContractElement> contracts1, List<ContractElement> contracts2, Set<Location> locations1, Set<Location> locations2, ResultListener reporter) {
 
         // index contracts, keys are combinations of cu name, method name and signature
         Multimap<Location, ContractElement> indexedContracts1 = indexContracts(contracts1);
         Multimap<Location, ContractElement> indexedContracts2 = indexContracts(contracts2);
 
+        // NOTE : if there is no entry, get(key) returns and empty collection, not null !
+
+        // NOTE : need to distinguish whether location exists, and location has no contracts !!
+
         Set<Location> locations = Sets.union(indexedContracts1.keySet(),indexedContracts2.keySet());
         for (Location location:locations) {
             Collection<ContractElement> contractsAtLocation1 = indexedContracts1.get(location);
-            if (contractsAtLocation1==null) contractsAtLocation1 = Collections.EMPTY_SET;
             Collection<ContractElement> contractsAtLocation2 = indexedContracts2.get(location);
-            if (contractsAtLocation2==null) contractsAtLocation2 = Collections.EMPTY_SET;
 
             // apply rules
-            checkForRemovedPostconditions(project,projectVersion1,projectVersion2,location,contractsAtLocation1,contractsAtLocation2,reporter);
-            checkForAddedPreconditions(project,projectVersion1,projectVersion2,location,contractsAtLocation1,contractsAtLocation2,reporter);
+            // condition is that location exists, otherwise removed methods will result in removed postconditions etc !
+
+            if (locations1.contains(location) && locations2.contains(location)) {
+                checkForRemovedPostconditions(project, projectVersion1, projectVersion2, location, contractsAtLocation1, contractsAtLocation2, reporter);
+                checkForAddedPreconditions(project, projectVersion1, projectVersion2, location, contractsAtLocation1, contractsAtLocation2, reporter);
+            }
         }
     }
 

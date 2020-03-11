@@ -6,7 +6,6 @@ import java.util.Objects;
 
 /**
  * Describes a location where an issue was detected.
- * Describes a location where an issue was detected.
  * @author jens dietrich
  */
 public class Location {
@@ -16,11 +15,13 @@ public class Location {
     private int lineNo = -1;
 
     public static Location newFrom(ContractElement ce) {
-        Location location = new Location();
-        location.cu = ce.getCuName();
-        location.methodDeclaration = ce.getMethodDeclaration();
-        location.lineNo = ce.getLineNo();
-        return location;
+        return new Location(ce.getCuName(),ce.getMethodDeclaration(),ce.getLineNo());
+    }
+
+    public Location(String cu, String methodDeclaration, int lineNo) {
+        this.cu = cu;
+        this.methodDeclaration = methodDeclaration;
+        this.lineNo = lineNo;
     }
 
     public int getLineNo() {
