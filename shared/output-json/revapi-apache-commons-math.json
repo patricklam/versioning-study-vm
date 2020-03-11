@@ -1,0 +1,2823 @@
+{
+  "name": "apache-commons-math",
+  "version1": "3.2",
+  "version2": "3.3",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.analysis.DifferentiableUnivariateMatrixFunction",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.analysis.DifferentiableUnivariateVectorFunction",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.analysis.FunctionUtils",
+      "line": "?",
+      "method": "compose",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.analysis.FunctionUtils",
+      "line": "?",
+      "method": "multiply",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.analysis.solvers.DifferentiableUnivariateSolver",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "line": "?",
+      "method": "isSupportLowerBoundInclusive",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "line": "?",
+      "method": "isSupportUpperBoundInclusive",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.distribution.RealDistribution",
+      "line": "?",
+      "method": "isSupportLowerBoundInclusive",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.distribution.RealDistribution",
+      "line": "?",
+      "method": "isSupportUpperBoundInclusive",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "org.apache.commons.math3.exception.util.LocalizedFormats",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.fitting.CurveFitter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.fitting.GaussianFitter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.fitting.HarmonicFitter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.fitting.PolynomialFitter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.runtimeAdded",
+      "file": "org.apache.commons.math3.geometry.euclidean.oned.Euclidean1D",
+      "line": "?",
+      "method": "getSubSpace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.oned.OrientedPoint",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.oned.Vector1D",
+      "line": "?",
+      "method": "distance",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.Line",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.Plane",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.Plane",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.Plane",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.twod.Line",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.twod.Line",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.euclidean.twod.SubLine",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.AbstractRegion",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.AbstractRegion",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.AbstractRegion",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.AbstractRegion",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.AbstractRegion",
+      "line": "?",
+      "method": "getBarycenter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "line": "?",
+      "method": "getCell",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Embedding",
+      "line": "?",
+      "method": "toSpace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Embedding",
+      "line": "?",
+      "method": "toSpace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Embedding",
+      "line": "?",
+      "method": "toSubSpace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Embedding",
+      "line": "?",
+      "method": "toSubSpace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+      "line": "?",
+      "method": "getOffset",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+      "line": "?",
+      "method": "getTolerance",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+      "line": "?",
+      "method": "project",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Region",
+      "line": "?",
+      "method": "checkPoint",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Region",
+      "line": "?",
+      "method": "getBarycenter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.apache.commons.math3.geometry.partitioning.Region",
+      "line": "?",
+      "method": "isFull",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.apache.commons.math3.geometry.partitioning.Region",
+      "line": "?",
+      "method": "isFull",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.apache.commons.math3.geometry.partitioning.Region",
+      "line": "?",
+      "method": "projectToBoundary",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Transform",
+      "line": "?",
+      "method": "apply",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "org.apache.commons.math3.geometry.partitioning.Transform",
+      "line": "?",
+      "method": "apply",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.ArrayRealVector",
+      "line": "?",
+      "method": "sparseIterator",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.runtimeAdded",
+      "file": "org.apache.commons.math3.linear.DecompositionSolver",
+      "line": "?",
+      "method": "getInverse",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.runtimeAdded",
+      "file": "org.apache.commons.math3.linear.DecompositionSolver",
+      "line": "?",
+      "method": "solve",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.runtimeAdded",
+      "file": "org.apache.commons.math3.linear.DecompositionSolver",
+      "line": "?",
+      "method": "solve",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.OpenMapRealMatrix",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.OpenMapRealVector",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.RealVector.SparseEntryIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.RealVector",
+      "line": "?",
+      "method": "ebeDivide",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.RealVector",
+      "line": "?",
+      "method": "ebeMultiply",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.RealVector",
+      "line": "?",
+      "method": "sparseIterator",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.SparseFieldMatrix",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.SparseFieldVector",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.SparseRealMatrix",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.SparseRealVector",
+      "line": "?",
+      "method": "ebeDivide",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.SparseRealVector",
+      "line": "?",
+      "method": "ebeMultiply",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.SparseRealVector",
+      "line": "?",
+      "method": "sparseIterator",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.apache.commons.math3.linear.SparseRealVector",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.math3.ode.events.Transformer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.math3.ode.nonstiff.RungeKuttaStepInterpolator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.math3.optim.linear.SimplexTableau",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer.BracketingStep",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.ModelFunction",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.ModelFunctionJacobian",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.Target",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.Weight",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optimization.direct.CMAESOptimizer",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optimization.direct.CMAESOptimizer",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.optimization.fitting.CurveFitter",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.math3.optimization.linear.SimplexTableau",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.random.RandomData",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.serialVersionUIDUnchanged",
+      "file": "org.apache.commons.math3.random.RandomDataGenerator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.random.RandomDataImpl",
+      "line": "?",
+      "method": "nextInversionDeviate",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.random.RandomDataImpl",
+      "line": "?",
+      "method": "nextInversionDeviate",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.random.ValueServer",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.runtimeAdded",
+      "file": "org.apache.commons.math3.stat.Frequency",
+      "line": "?",
+      "method": "incrementValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.math3.stat.descriptive.moment.FirstMoment",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.math3.stat.descriptive.moment.FourthMoment",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.math3.stat.descriptive.moment.ThirdMoment",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "binomialCoefficient",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "binomialCoefficientDouble",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "binomialCoefficientLog",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "factorial",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "factorialDouble",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "factorialLog",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.runtimeAdded",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "pow",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "pow",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.runtimeAdded",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "pow",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "pow",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ArithmeticUtils",
+      "line": "?",
+      "method": "stirlingS2",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ResizableDoubleArray",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ResizableDoubleArray",
+      "line": "?",
+      "method": "checkContractExpand",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.math3.util.ResizableDoubleArray",
+      "line": "?",
+      "method": "getExpansionMode",
+      "direction": "?"
+    }
+  ]
+}

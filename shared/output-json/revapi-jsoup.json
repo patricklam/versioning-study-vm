@@ -1,0 +1,63 @@
+{
+  "name": "jsoup",
+  "version1": "1.9.2",
+  "version2": "1.10.1",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.jsoup.Connection.Response",
+      "line": "?",
+      "method": "charset",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.jsoup.Connection",
+      "line": "?",
+      "method": "headers",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "org.jsoup.nodes.Entities.EscapeMode",
+      "line": "?",
+      "method": "getMap",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.jsoup.parser.ParseErrorList",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.jsoup.parser.Token",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.jsoup.parser.TreeBuilder",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "org.jsoup.parser.XmlTreeBuilder",
+      "line": "?",
+      "method": "initialiseParse",
+      "direction": "?"
+    }
+  ]
+}

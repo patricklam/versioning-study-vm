@@ -1,0 +1,71 @@
+{
+  "name": "apache-commons-lang",
+  "version1": "3.2.1",
+  "version2": "3.3",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.apache.commons.lang3.EnumUtils",
+      "line": "?",
+      "method": "generateBitVector",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.apache.commons.lang3.EnumUtils",
+      "line": "?",
+      "method": "generateBitVectors",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.lang3.StringEscapeUtils",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.apache.commons.lang3.StringEscapeUtils",
+      "line": "?",
+      "method": "escapeXml",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.checkedRemoved",
+      "file": "org.apache.commons.lang3.StringUtils",
+      "line": "?",
+      "method": "toEncodedString",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.serialVersionUIDChanged",
+      "file": "org.apache.commons.lang3.time.FastDateParser",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.lang3.time.FastDatePrinter.NumberRule",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.apache.commons.lang3.time.FastDatePrinter.Rule",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    }
+  ]
+}

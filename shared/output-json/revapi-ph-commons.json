@@ -1,0 +1,2607 @@
+{
+  "name": "ph-commons",
+  "version1": "9.0.0",
+  "version2": "9.3.9",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.slf4j.Logger",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.slf4j.Logger",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.base64.Base64",
+      "line": "?",
+      "method": "decodeToObject",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.base64.Base64",
+      "line": "?",
+      "method": "decodeToObject",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.base64.Base64",
+      "line": "?",
+      "method": "encodeObject",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.base64.Base64",
+      "line": "?",
+      "method": "encodeObject",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "createCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChangedCovariantly",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChangedCovariantly",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "getFromCacheNoStatsNotLocked",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeChanged",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "putInCacheNotLocked",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonFinalClassInheritsFromNewClass",
+      "file": "com.helger.commons.cache.Cache",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.cache.ICache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.cache.IMutableCache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.callback.ICallbackList",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.callback.exception.CollectingExceptionCallback",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.callback.exception.CollectingExceptionCallback",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.changelog.AbstractChangeLogEntry",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.changelog.CChangeLog",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.changelog.ChangeLog",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.changelog.ChangeLogEntry",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.changelog.ChangeLogRelease",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.changelog.EChangeLogAction",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.changelog.EChangeLogCategory",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.charset.CharsetHelper",
+      "line": "?",
+      "method": "getCharsetFromNameOrNull",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.ASCII85Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.ASCIIHexCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base16Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base16Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base16Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base16Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base16Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base16Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base32Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base32Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base32Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base32Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base32Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base32Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base64Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base64Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base64Codec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base64Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base64Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.Base64Codec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.DCTCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.FlateCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.FlateCodec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.GZIPCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.GZIPCodec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.IByteArrayCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.IByteArrayCodec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.IByteArrayDecoder",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.IByteArrayEncoder",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.IByteArrayStreamDecoder",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.IByteArrayStreamEncoder",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.codec.LZWCodec.AbstractLZWDictionary",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.LZWCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.LZWCodec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.QuotedPrintableCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.QuotedPrintableCodec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.RunLengthCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.URLCodec",
+      "line": "?",
+      "method": "getDecodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.codec.URLCodec",
+      "line": "?",
+      "method": "getEncodedLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.collection.ArrayHelper",
+      "line": "?",
+      "method": "startsWith",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.collection.ArrayHelper",
+      "line": "?",
+      "method": "startsWith",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.collection.ArrayHelper",
+      "line": "?",
+      "method": "startsWith",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.collection.ArrayHelper",
+      "line": "?",
+      "method": "startsWith",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.collection.CollectionHelper",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.collection.impl.ICommonsIterable",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.collection.impl.ICommonsSortedMap",
+      "line": "?",
+      "method": "copyOfEntrySet",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.collection.iterate.ArrayIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.defaultSerializationChanged",
+      "file": "com.helger.commons.collection.iterate.EmptyIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.collection.iterate.FilterIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.collection.iterate.IIterableIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.collection.iterate.IterableIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.collection.iterate.IterableIteratorFromEnumeration",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.collection.iterate.MapperIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.concurrent.collector.AbstractConcurrentCollector",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.concurrent.collector.ConcurrentCollectorMultiple",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.concurrent.collector.ConcurrentCollectorSingle",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.generics.formalTypeParameterRemoved",
+      "file": "com.helger.commons.concurrent.collector.IConcurrentCollector",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.concurrent.collector.IConcurrentPerformer",
+      "line": "?",
+      "method": "runAsync",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.concurrent.collector.IMutableConcurrentCollector",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.superTypeTypeParametersChanged",
+      "file": "com.helger.commons.concurrent.collector.IMutableConcurrentCollector",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.csv.CSVReader",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "getFromCacheNoStatsNotLocked",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.DateTimeFormatterCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.PDTFactory",
+      "line": "?",
+      "method": "createLocalDate",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFactory",
+      "line": "?",
+      "method": "createLocalDate",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.PDTFactory",
+      "line": "?",
+      "method": "createLocalTime",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFactory",
+      "line": "?",
+      "method": "createLocalTime",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFactory",
+      "line": "?",
+      "method": "getCurrentYearObj",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.PDTFactory",
+      "line": "?",
+      "method": "getCurrentYearObj",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "getFromCacheNoStatsNotLocked",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.PDTFormatter.LocalizedDateFormatCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.datetime.PDTFormatter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "com.helger.commons.equals.EqualsHelper",
+      "line": "?",
+      "method": "equalsSet",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.generics.elementNowParameterized",
+      "file": "com.helger.commons.equals.EqualsHelper",
+      "line": "?",
+      "method": "equalsSet",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.generics.formalTypeParameterAdded",
+      "file": "com.helger.commons.equals.EqualsHelper",
+      "line": "?",
+      "method": "equalsSet",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.equals.EqualsHelper",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.error.SingleError.AbstractBuilder",
+      "line": "?",
+      "method": "setErrorLocation",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.error.level.IErrorLevel",
+      "line": "?",
+      "method": "getID",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.error.level.IHasErrorLevels",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.error.text.DynamicHasErrorText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.error.text.DynamicHasErrorTextWithArgs",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.error.text.IHasErrorText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.http.CHttpHeader",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.http.HttpHeaderMap",
+      "line": "?",
+      "method": "forEachHeaderLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.http.HttpHeaderMap",
+      "line": "?",
+      "method": "forEachSingleHeader",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.http.HttpHeaderMap",
+      "line": "?",
+      "method": "getAllHeaderLines",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.http.HttpHeaderMap",
+      "line": "?",
+      "method": "getUnifiedName",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.id.IHasID",
+      "line": "?",
+      "method": "getID",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.id.factory.AbstractPersistingLongIDFactory",
+      "line": "?",
+      "method": "readAndUpdateIDCounter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.id.factory.FileIntIDFactory",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.id.factory.FileIntIDFactory",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.id.factory.FileIntIDFactory",
+      "line": "?",
+      "method": "getFile",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.id.factory.FileIntIDFactory",
+      "line": "?",
+      "method": "readAndUpdateIDCounter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.id.factory.FileLongIDFactory",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.id.factory.FileLongIDFactory",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.id.factory.FileLongIDFactory",
+      "line": "?",
+      "method": "getFile",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.io.file.FileSystemIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.io.file.FileSystemRecursiveIterator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.io.resource.inmemory.ReadableResourceByteArray",
+      "line": "?",
+      "method": "bytes",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.io.resource.inmemory.ReadableResourceByteArray",
+      "line": "?",
+      "method": "isCopy",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.resource.inmemory.ReadableResourceInputStream",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.io.stream.CountingInputStream",
+      "line": "?",
+      "method": "getBytesRead",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.io.stream.CountingInputStream",
+      "line": "?",
+      "method": "getMark",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.io.stream.CountingInputStream",
+      "line": "?",
+      "method": "getPosition",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.io.stream.CountingOutputStream",
+      "line": "?",
+      "method": "getBytesWritten",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.CountingOutputStream",
+      "line": "?",
+      "method": "write",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.io.stream.LoggingOutputStream",
+      "line": "?",
+      "method": "close",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.LoggingOutputStream",
+      "line": "?",
+      "method": "write",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.io.stream.LoggingOutputStream",
+      "line": "?",
+      "method": "write",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayInputStream",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayInputStream",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayInputStream",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayInputStream",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayInputStream",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayInputStream",
+      "line": "?",
+      "method": "isCopy",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.defaultSerializationChanged",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayInputStream",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayOutputStream",
+      "line": "?",
+      "method": "directGetBuffer",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.defaultSerializationChanged",
+      "file": "com.helger.commons.io.stream.NonBlockingByteArrayOutputStream",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeRemoved",
+      "file": "com.helger.commons.io.stream.NonBlockingCharArrayWriter",
+      "line": "?",
+      "method": "directGetBuffer",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.NonBlockingCharArrayWriter",
+      "line": "?",
+      "method": "directGetBuffer",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.NonBlockingStringReader",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.stream.NonBlockingStringWriter",
+      "line": "?",
+      "method": "toString",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.NonClosingOutputStream",
+      "line": "?",
+      "method": "write",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "copyInputStreamToOutputStream",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "copyInputStreamToOutputStream",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "copyReaderToWriter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopy",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopy",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopy",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopy",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopyWithLimit",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopyWithLimit",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopyWithLimit",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.StreamHelper",
+      "line": "?",
+      "method": "getCopyWithLimit",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.io.stream.WrappedOutputStream",
+      "line": "?",
+      "method": "write",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "bytes",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "getData",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "getLength",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "isCopy",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "size",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.defaultSerializationChanged",
+      "file": "com.helger.commons.io.streamprovider.ByteArrayInputStreamProvider",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.lang.ClassLoaderHelper",
+      "line": "?",
+      "method": "getClassClassLoader",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.lang.ClassLoaderHelper",
+      "line": "?",
+      "method": "getClassClassLoader",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.lang.ClassLoaderHelper",
+      "line": "?",
+      "method": "getContextClassLoader",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.lang.ClassLoaderHelper",
+      "line": "?",
+      "method": "getContextClassLoader",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.lang.ClassLoaderHelper",
+      "line": "?",
+      "method": "getParentClassLoader",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.lang.ClassLoaderHelper",
+      "line": "?",
+      "method": "getParentClassLoader",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.lang.CloneHelper",
+      "line": "?",
+      "method": "getClonedJAXBElement",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.lang.EnumHelper",
+      "line": "?",
+      "method": "findFirst",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.lang.EnumHelper",
+      "line": "?",
+      "method": "findFirst",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.lang.EnumHelper",
+      "line": "?",
+      "method": "findFirst",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.lang.EnumHelper",
+      "line": "?",
+      "method": "findFirst",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "com.helger.commons.lang.NonBlockingProperties",
+      "line": "?",
+      "method": "create",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.locale.LocaleCache",
+      "line": "?",
+      "method": "reinitialize",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.nowFinal",
+      "file": "com.helger.commons.locale.country.CountryCache",
+      "line": "?",
+      "method": "reinitialize",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.log.InMemoryLogger",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.math.CombinationGenerator",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.mime.EMimeContentType",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.mime.MimeType",
+      "line": "?",
+      "method": "compareTo",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "com.helger.commons.mock.CommonsMock.MockSupplier",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "com.helger.commons.mock.CommonsTestHelper",
+      "line": "?",
+      "method": "testInParallel",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.random.RandomHelper",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "getFromCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "getFromCacheNoStats",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "getFromCacheNoStatsNotLocked",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.regex.RegExCache",
+      "line": "?",
+      "method": "putInCache",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.string.StringHelper",
+      "line": "?",
+      "method": "isAllWhitespace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.string.StringHelper",
+      "line": "?",
+      "method": "isAllWhitespace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.system.EJavaVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeChanged",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.system.SystemProperties",
+      "line": "?",
+      "method": "setPropertyValue",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.AbstractHasText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.AbstractMapBasedMultilingualText",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.AbstractMapBasedMultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.AbstractMapBasedMultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "containsLocale",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "getAllLocales",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "getAllTexts",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "getLocaleCount",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "internalClear",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "internalGetAllLocales",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "internalGetMap",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "internalRemoveText",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "isEmpty",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "size",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "texts",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.AbstractReadOnlyMapBasedMultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.ConstantHasTextWithArgs",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.HasTextWithArgs",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.IHasText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.IHasTextWithArgs",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.IHasTextWithArgs",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.IMultilingualText",
+      "line": "?",
+      "method": "containsLocale",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.IMultilingualText",
+      "line": "?",
+      "method": "getAllLocales",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "com.helger.commons.text.IMultilingualText",
+      "line": "?",
+      "method": "getAllTexts",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.IMultilingualText",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "com.helger.commons.text.IMultilingualText",
+      "line": "?",
+      "method": "texts",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.IMultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.IMutableMultilingualText",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.IMutableMultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.MultilingualText",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.MultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.MultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.ReadOnlyMultilingualText",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.ReadOnlyMultilingualText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.AbstractCodepointIterator",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.AbstractCodepointIterator",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorByteArray",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorByteArray",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorByteBuffer",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorByteBuffer",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorCharArray",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorCharArray",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorCharBuffer",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorCharBuffer",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorCharSequence",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorCharSequence",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorInputStream",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorInputStream",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorReadableByteChannel",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorReadableByteChannel",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorReader",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.codepoint.CodepointIteratorReader",
+      "line": "?",
+      "method": "next",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.display.HasDisplayTextWithArgs",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.display.IDisplayTextProvider",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.display.IHasDisplayText",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.helger.commons.text.display.IHasDisplayTextWithArgs",
+      "line": "?",
+      "method": "getDisplayTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "com.helger.commons.text.display.IHasDisplayTextWithArgs",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.helger.commons.text.resolve.AbstractEnumTextResolverWithOverrideAndFallback",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.helger.commons.text.resolve.DefaultTextResolver",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.helger.commons.text.resolve.EnumTextResolverWithPropertiesOverrideAndFallback",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.helger.commons.text.resolve.IEnumTextResolver",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.text.resourcebundle.ResourceBundleTextProvider",
+      "line": "?",
+      "method": "getTextWithArgs",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.thirdparty.ILicense",
+      "line": "?",
+      "method": "getID",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.thirdparty.ILicense",
+      "line": "?",
+      "method": "getVersion",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.traits.IGetterByIndexTrait",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "com.helger.commons.traits.IGetterByKeyTrait",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.type.ITypedObject",
+      "line": "?",
+      "method": "getID",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.defaultSerializationChanged",
+      "file": "com.helger.commons.type.TypedObject",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.helger.commons.version.IHasVersion",
+      "line": "?",
+      "method": "getVersion",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.ws.WSClientConfig",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "com.helger.commons.ws.WSHelper",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    }
+  ]
+}

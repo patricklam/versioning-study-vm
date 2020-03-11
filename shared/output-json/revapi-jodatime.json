@@ -1,0 +1,127 @@
+{
+  "name": "jodatime",
+  "version1": "2.0",
+  "version2": "2.10.5",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.joda.time.DateMidnight",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.joda.time.DateTime",
+      "line": "?",
+      "method": "toDateMidnight",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "org.joda.time.DateTimeUtils",
+      "line": "?",
+      "method": "fromJulianDay",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "org.joda.time.DateTimeUtils",
+      "line": "?",
+      "method": "getDefaultTimeZoneNames",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "org.joda.time.DateTimeUtils",
+      "line": "?",
+      "method": "setDefaultTimeZoneNames",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "org.joda.time.DateTimeUtils",
+      "line": "?",
+      "method": "toJulianDay",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.finalMethodAddedToNonFinalClass",
+      "file": "org.joda.time.DateTimeUtils",
+      "line": "?",
+      "method": "toJulianDayNumber",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.joda.time.LocalDate",
+      "line": "?",
+      "method": "toDateMidnight",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.joda.time.LocalDate",
+      "line": "?",
+      "method": "toDateMidnight",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "org.joda.time.MutableDateTime",
+      "line": "?",
+      "method": "toString",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.joda.time.base.AbstractDateTime",
+      "line": "?",
+      "method": "toString",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.serialVersionUIDUnchanged",
+      "file": "org.joda.time.field.DelegatedDateTimeField",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.joda.time.format.DateTimeParserBucket",
+      "line": "?",
+      "method": "setPivotYear",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "org.joda.time.tz.ZoneInfoCompiler",
+      "line": "?",
+      "method": "parseDataFile",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "org.joda.time.tz.ZoneInfoCompiler",
+      "line": "?",
+      "method": "verbose",
+      "direction": "?"
+    }
+  ]
+}

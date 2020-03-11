@@ -3,16 +3,19 @@ package semverstudy.commons;
 import java.net.URL;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Spec of a project version to be analysed -- note that this structure is auto-mapped to the specs written in json.
  * @author jens dietrich
  */
 public class ProjectVersion {
-
     private String version = null;
     private URL source = null;
     private URL binary = null;
     private String dir = null;
+    @JsonIgnore
     private String patch = null;
 
     public String getPatch() {
@@ -58,8 +61,12 @@ public class ProjectVersion {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+			return true;
+		}
+        if (o == null || getClass() != o.getClass()) {
+			return false;
+		}
         ProjectVersion that = (ProjectVersion) o;
         return Objects.equals(version, that.version) &&
                 Objects.equals(source, that.source) &&

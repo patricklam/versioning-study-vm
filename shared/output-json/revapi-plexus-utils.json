@@ -1,0 +1,695 @@
+{
+  "name": "plexus-utils",
+  "version1": "3.0",
+  "version2": "3.3.0",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.DirectoryWalker",
+      "line": "?",
+      "method": "getExcludes",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.DirectoryWalker",
+      "line": "?",
+      "method": "getIncludes",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.DirectoryWalker",
+      "line": "?",
+      "method": "setExcludes",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.DirectoryWalker",
+      "line": "?",
+      "method": "setIncludes",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "compute",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "computeIfAbsent",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "computeIfPresent",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "get",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "getOrDefault",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "merge",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "putAll",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "putIfAbsent",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "remove",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "replace",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.noLongerImplementsInterface",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.generics.elementNowParameterized",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.generics.formalTypeParameterAdded",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.generics.formalTypeParameterAdded",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.superTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.defaultSerializationChanged",
+      "file": "org.codehaus.plexus.util.FastMap",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getDefaultExcludesAsList",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getDirectoryNames",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getDirectoryNames",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getFileAndDirectoryNames",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getFileNames",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getFileNames",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getFiles",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "getFiles",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.FileUtils",
+      "line": "?",
+      "method": "loadFile",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.InterpolationFilterReader",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.InterpolationFilterReader",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.Os",
+      "line": "?",
+      "method": "getValidFamilies",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.checkedAdded",
+      "file": "org.codehaus.plexus.util.PropertyUtils",
+      "line": "?",
+      "method": "loadProperties",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.checkedAdded",
+      "file": "org.codehaus.plexus.util.PropertyUtils",
+      "line": "?",
+      "method": "loadProperties",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.checkedAdded",
+      "file": "org.codehaus.plexus.util.PropertyUtils",
+      "line": "?",
+      "method": "loadProperties",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getFieldByNameIncludingSuperclasses",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getFieldsIncludingSuperclasses",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getFieldsIncludingSuperclasses",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getSetter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getSetterType",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getSetters",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getSetters",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.ReflectionUtils",
+      "line": "?",
+      "method": "getVariablesAndValuesIncludingSuperclasses",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.addedToInterface",
+      "file": "org.codehaus.plexus.util.Scanner",
+      "line": "?",
+      "method": "setFilenameComparator",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "org.codehaus.plexus.util.SelectorUtils",
+      "line": "?",
+      "method": "tokenizePath",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "org.codehaus.plexus.util.SelectorUtils",
+      "line": "?",
+      "method": "tokenizePath",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.codehaus.plexus.util.StringUtils",
+      "line": "?",
+      "method": "defaultString",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.codehaus.plexus.util.StringUtils",
+      "line": "?",
+      "method": "defaultString",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.codehaus.plexus.util.StringUtils",
+      "line": "?",
+      "method": "equals",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.StringUtils",
+      "line": "?",
+      "method": "interpolate",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.StringUtils",
+      "line": "?",
+      "method": "join",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.checkedAdded",
+      "file": "org.codehaus.plexus.util.cli.DefaultConsumer",
+      "line": "?",
+      "method": "consumeLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.exception.checkedAdded",
+      "file": "org.codehaus.plexus.util.cli.StreamConsumer",
+      "line": "?",
+      "method": "consumeLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.cli.shell.BourneShell",
+      "line": "?",
+      "method": "getShellArgsList",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.removed",
+      "file": "org.codehaus.plexus.util.cli.shell.BourneShell",
+      "line": "?",
+      "method": "unifyQuotes",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.cli.shell.CmdShell",
+      "line": "?",
+      "method": "getCommandLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.cli.shell.Shell",
+      "line": "?",
+      "method": "getCommandLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.cli.shell.Shell",
+      "line": "?",
+      "method": "getOriginalCommandLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.cli.shell.Shell",
+      "line": "?",
+      "method": "getRawCommandLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.cli.shell.Shell",
+      "line": "?",
+      "method": "getShellArgsList",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.cli.shell.Shell",
+      "line": "?",
+      "method": "getShellCommandLine",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.dag.CycleDetectedException",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.CycleDetectedException",
+      "line": "?",
+      "method": "getCycle",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.CycleDetector",
+      "line": "?",
+      "method": "hasCycle",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.CycleDetector",
+      "line": "?",
+      "method": "introducesCycle",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.parameterTypeParameterChanged",
+      "file": "org.codehaus.plexus.util.dag.CycleDetector",
+      "line": "?",
+      "method": "introducesCycle",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.CycleDetector",
+      "line": "?",
+      "method": "introducesCycle",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.DAG",
+      "line": "?",
+      "method": "getChildLabels",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.DAG",
+      "line": "?",
+      "method": "getLabels",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.DAG",
+      "line": "?",
+      "method": "getParentLabels",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.DAG",
+      "line": "?",
+      "method": "getSuccessorLabels",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.DAG",
+      "line": "?",
+      "method": "getVerticies",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.codehaus.plexus.util.dag.DAG",
+      "line": "?",
+      "method": "getVerticies",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.defaultSerializationChanged",
+      "file": "org.codehaus.plexus.util.dag.DAG",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.TopologicalSorter",
+      "line": "?",
+      "method": "sort",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.TopologicalSorter",
+      "line": "?",
+      "method": "sort",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.Vertex",
+      "line": "?",
+      "method": "getChildLabels",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.Vertex",
+      "line": "?",
+      "method": "getChildren",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.Vertex",
+      "line": "?",
+      "method": "getParentLabels",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.dag.Vertex",
+      "line": "?",
+      "method": "getParents",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.removed",
+      "file": "org.codehaus.plexus.util.io.FileInputStreamFacade",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.xml.PrettyPrintXMLWriter",
+      "line": "?",
+      "method": "getElementStack",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.returnTypeTypeParametersChanged",
+      "file": "org.codehaus.plexus.util.xml.SerializerXMLWriter",
+      "line": "?",
+      "method": "getExceptions",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "org.codehaus.plexus.util.xml.Xpp3Dom",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.serialVersionUIDUnchanged",
+      "file": "org.codehaus.plexus.util.xml.Xpp3Dom",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.removed",
+      "file": "org.codehaus.plexus.util.xml.pull.MXSerializer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    }
+  ]
+}

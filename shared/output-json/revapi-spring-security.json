@@ -1,0 +1,583 @@
+{
+  "name": "spring-security",
+  "version1": "5.2.2.RELEASE",
+  "version2": "5.3.0.RELEASE",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "com.fasterxml.jackson.databind.Module",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "com.fasterxml.jackson.databind.Module",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "com.fasterxml.jackson.databind.Module.SetupContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "com.fasterxml.jackson.databind.Module.SetupContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "com.fasterxml.jackson.databind.ObjectMapper",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "com.fasterxml.jackson.databind.ObjectMapper",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "net.sf.ehcache.Ehcache",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "net.sf.ehcache.Ehcache",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.aopalliance.aop.Advice",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.aopalliance.aop.Advice",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.aopalliance.intercept.MethodInvocation",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.aopalliance.intercept.MethodInvocation",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.apache.commons.logging.Log",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.apache.commons.logging.Log",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.aspectj.lang.JoinPoint",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.aspectj.lang.JoinPoint",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.aop.Pointcut",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.aop.Pointcut",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.beans.BeansException",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.beans.BeansException",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.beans.factory.BeanFactory",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.beans.factory.BeanFactory",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.cache.Cache",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.cache.Cache",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.context.ApplicationContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.context.ApplicationContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.context.ApplicationContextException",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.context.ApplicationContextException",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.context.ApplicationEvent",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.context.ApplicationEvent",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.context.ApplicationEventPublisher",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.context.ApplicationEventPublisher",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.context.MessageSource",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.context.MessageSource",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.context.event.SmartApplicationListener",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.context.event.SmartApplicationListener",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.context.support.MessageSourceAccessor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.context.support.MessageSourceAccessor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.core.ParameterNameDiscoverer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.core.ParameterNameDiscoverer",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.core.convert.converter.Converter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.core.convert.converter.Converter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.core.io.Resource",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.core.io.Resource",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.core.task.AsyncTaskExecutor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.core.task.AsyncTaskExecutor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.core.task.TaskExecutor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.core.task.TaskExecutor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.expression.EvaluationContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.expression.EvaluationContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.expression.Expression",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.expression.Expression",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.expression.ExpressionParser",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.expression.ExpressionParser",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.expression.spel.support.StandardEvaluationContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.expression.spel.support.StandardEvaluationContext",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.scheduling.SchedulingTaskExecutor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.scheduling.SchedulingTaskExecutor",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.scheduling.TaskScheduler",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.scheduling.TaskScheduler",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "org.springframework.scheduling.Trigger",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "org.springframework.scheduling.Trigger",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "reactor.core.publisher.Mono",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "reactor.core.publisher.Mono",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "reactor.core.scheduler.Scheduler",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "reactor.core.scheduler.Scheduler",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.oldClass",
+      "file": "reactor.util.context.Context",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.missing.newClass",
+      "file": "reactor.util.context.Context",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.class.nonPublicPartOfAPI",
+      "file": "org.springframework.security.access.method.MapBasedMethodSecurityMetadataSource.RegisteredMethod",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+      "line": "?",
+      "method": "setAdditionalExceptionMappings",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.constantValueChanged",
+      "file": "org.springframework.security.core.SpringSecurityCoreVersion",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.serialVersionUIDChanged",
+      "file": "org.springframework.security.core.session.SessionInformation",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    }
+  ]
+}

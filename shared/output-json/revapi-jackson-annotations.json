@@ -1,0 +1,311 @@
+{
+  "name": "jackson-annotations",
+  "version1": "2.7.0",
+  "version2": "2.10.2",
+  "results": [
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JacksonInject",
+      "line": "?",
+      "method": "useInput",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JsonAnyGetter",
+      "line": "?",
+      "method": "enabled",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JsonAnySetter",
+      "line": "?",
+      "method": "enabled",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonAnySetter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Feature",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Feature",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Feature",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Feature",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.serialVersionUIDUnchanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.added",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.removed",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JsonFormat",
+      "line": "?",
+      "method": "lenient",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.enumConstantOrderChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonInclude.Include",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.field.serialVersionUIDUnchanged",
+      "file": "com.fasterxml.jackson.annotation.JsonInclude.Value",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.numberOfParametersChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonInclude.Value",
+      "line": "?",
+      "method": "<init>",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JsonInclude",
+      "line": "?",
+      "method": "contentFilter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JsonInclude",
+      "line": "?",
+      "method": "valueFilter",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JsonSetter",
+      "line": "?",
+      "method": "contentNulls",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.abstractMethodAdded",
+      "file": "com.fasterxml.jackson.annotation.JsonSetter",
+      "line": "?",
+      "method": "nulls",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonSetter",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.method.defaultValueChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonTypeInfo",
+      "line": "?",
+      "method": "defaultImpl",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonValue",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    },
+    {
+      "tool": "RevAPI",
+      "key": "java.annotation.attributeValueChanged",
+      "file": "com.fasterxml.jackson.annotation.JsonView",
+      "line": "?",
+      "method": "?",
+      "direction": "?"
+    }
+  ]
+}
