@@ -35,6 +35,8 @@ public class Utils {
      * @return
      */
     public static final String trimRetType(String desc) {
-        return desc.split(" ")[1];
+    	int idx = desc.indexOf(" ");
+    	assert idx > -1;
+        return desc.substring(idx).trim();
     }
 }
