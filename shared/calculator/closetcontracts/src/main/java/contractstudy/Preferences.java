@@ -12,17 +12,20 @@ import java.util.Properties;
  * @author jens dietrich
  */
 public class Preferences {
-	static Logger LOGGER = Logging.getLogger(Preferences.class);
+	static Logger LOGGER = Logging.getLogger("preferences");
 	public static final Properties prefs = new Properties();
 	public static final String PREF_FILE = "preferences.properties";
 	static {
-		LOGGER.warn("Reading user preferences from " + PREF_FILE);
+		LOGGER.info("Reading user preferences from " + PREF_FILE);
 		try (FileInputStream in = new FileInputStream(PREF_FILE)) {
 			prefs.load(in);
 		}
 		catch (Exception x) {
 			LOGGER.warn("Cannot access property file " + PREF_FILE);
 			LOGGER.warn("Create this as a standard property file with lines key=value, note that this is in .hgignore");
+		}
+		finally {
+			LOGGER.info("done");
 		}
 	}
 

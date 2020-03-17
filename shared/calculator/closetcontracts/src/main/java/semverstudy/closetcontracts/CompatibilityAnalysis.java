@@ -11,7 +11,12 @@ import org.apache.log4j.Logger;
 import semverstudy.commons.*;
 import semverstudy.commons.DiffResult;
 import semverstudy.commons.Downloader;
+import semverstudy.commons.bcm.ByteCodeModel;
+import semverstudy.commons.bcm.JType;
+
 import java.io.*;
+import java.lang.reflect.Type;
+import java.net.URL;
 import java.nio.file.FileVisitResult;
 import java.nio.file.FileVisitor;
 import java.nio.file.Files;
@@ -107,6 +112,7 @@ public class CompatibilityAnalysis {
         AtomicInteger progressCounter = new AtomicInteger(0);
         long startTime = System.currentTimeMillis();
         for (Project project:projects) {
+
             LOGGER.info("Analysing project " + project.getName());
             AtomicInteger constraintCounter = new AtomicInteger(0);
             AtomicInteger parsedCUCounter = new AtomicInteger(0);
@@ -121,6 +127,13 @@ public class CompatibilityAnalysis {
             for (ProjectVersion projectVersion : project.getVersions()) {
                 parsedProgramVersionCounter.incrementAndGet();
                 LOGGER.info("Analysing project version " + project.getName() + " - "+ projectVersion.getVersion());
+
+                URL url = projectVersion.getBinary();
+                File jar = Downloader.download(url);
+                assert !jar.isDirectory(); // downloaded should not unzip jars
+
+                ByteCodeModel byteCodeModel = new ByteCodeModel(jar);
+
                 File projectVersionFolder = Downloader.download(projectVersion.getSource());
                 ConstraintCollector collector = new ConstraintCollector() {
                     @Override
@@ -134,6 +147,11 @@ public class CompatibilityAnalysis {
                 constraintCounter.addAndGet(collector.getContractElements().size());
 
                 List<ContractElement> contracts = collector.getContractElements();
+
+                for (ContractElement contractElement:contracts) {
+                    mapSignatures(byteCodeModel,contractElement);
+                }
+
                 Set<Location> locations = collector.getVisitedLocations();
                 if (contractsOfPreviousVersion!=null) {
                     assert locationsInPreviousVersion!=null;
@@ -153,6 +171,28 @@ public class CompatibilityAnalysis {
         //        LOGGER.info("\tCUs where parsing failed: " + parserFailedCUCounter.intValue());
         //        LOGGER.info("\tprogram versions checked: " + parsedProgramVersionCounter.intValue());
         //        LOGGER.info("\tcontracts found: " + constraintCounter.intValue());
+    }
+
+    // refine the methodDeclaration field of a contractElement using information from bytecode analysis
+    private static void mapSignatures(ByteCodeModel byteCodeModel, ContractElement contractElement) {
+        JType type = findClass(byteCodeModel,contractElement.getCuName());
+        System.out.println(type);
+    }
+
+    private static JType findClass(ByteCodeModel byteCodeModel, String cuName) {
+        String name = cuName;
+        if (name.endsWith(".java")) name = name.substring(0,name.length()-5);
+        name = name.replaceAll("/",".");
+        return byteCodeModel.getType(name);
+    }
+
+    private static JType findInnerClass(ByteCodeModel byteCodeModel, String cuName) {
+        String name = cuName;
+        if (name.endsWith(".java")) name = name.substring(0,name.length()-5);
+        name = name.replaceAll("/",".");
+        JType type = byteCodeModel.getType(name);
+
+        return type;
     }
 
     private static void diffAndReport(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, List<ContractElement> contracts1, List<ContractElement> contracts2, Set<Location> locations1, Set<Location> locations2, ResultListener reporter) {
