@@ -30,8 +30,8 @@ public class TestConditionalRuntimeExceptions {
 		assertEquals(2,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("Flat.java",precondition.getCuName());
-		assertEquals("foo1(int)",precondition.getMethodDeclaration());
+		assertEquals("Flat.java",precondition.getLocation().getCuName());
+		assertEquals("foo1(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CREIllegalArgumentException,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -46,8 +46,8 @@ public class TestConditionalRuntimeExceptions {
 		assertEquals(2,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(1);
-		assertEquals("Flat.java",precondition.getCuName());
-		assertEquals("foo2(int)",precondition.getMethodDeclaration());
+		assertEquals("Flat.java",precondition.getLocation().getCuName());
+		assertEquals("foo2(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CREIllegalArgumentException,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -62,8 +62,8 @@ public class TestConditionalRuntimeExceptions {
         assertEquals(1,preconditions.size());
 
         ContractElement precondition = preconditions.get(0);
-        assertEquals("Deep.java",precondition.getCuName());
-        assertEquals("foo1(int)",precondition.getMethodDeclaration());
+        assertEquals("Deep.java",precondition.getLocation().getCuName());
+        assertEquals("foo1(int)",precondition.getLocation().getMethodDeclaration());
         assertEquals("i > 0 && i != 42",precondition.getCondition());
         assertEquals(ConstraintType.CREIllegalArgumentException,precondition.getKind());
         assertEquals("\"This is not the answer!\"",precondition.getAdditionalInfo());

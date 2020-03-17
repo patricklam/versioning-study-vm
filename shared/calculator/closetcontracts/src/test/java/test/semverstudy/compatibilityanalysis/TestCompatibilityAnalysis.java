@@ -56,7 +56,7 @@ public class TestCompatibilityAnalysis {
             @Override
             public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, String violationType, String detail) {
                 if (
-                    location.getCu().equals("com.foo/ClassDroppingPostCondition.java")
+                    location.getCuName().equals("com.foo/ClassDroppingPostCondition.java")
                     && location.getMethodDeclaration().equals("foo(int)")
                     && projectVersion1.getVersion().equals("1.0.0")
                     && projectVersion2.getVersion().equals("2.0.0")
@@ -77,7 +77,7 @@ public class TestCompatibilityAnalysis {
             @Override
             public void resultFound(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, Location location, String violationType, String detail) {
                 if (
-                    location.getCu().equals("com.foo/ClassIntroducingPreCondition.java")
+                    location.getCuName().equals("com.foo/ClassIntroducingPreCondition.java")
                     && location.getMethodDeclaration().equals("foo(int)")
                     && projectVersion1.getVersion().equals("1.0.0")
                     && projectVersion2.getVersion().equals("2.0.0")

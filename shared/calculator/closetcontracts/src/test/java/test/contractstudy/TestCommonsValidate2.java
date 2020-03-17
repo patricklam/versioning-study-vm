@@ -5,10 +5,8 @@ import contractstudy.ConstraintCollector;
 import contractstudy.ConstraintType;
 import contractstudy.scripts.CollectContracts;
 import org.junit.Test;
-
 import java.io.File;
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -28,8 +26,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue1.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -44,8 +42,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue2.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue2.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -60,8 +58,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue3.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue3.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -76,8 +74,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue4.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue4.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -108,8 +106,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("NoNullElements.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("NoNullElements.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("new ArrayList(10)",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangNoNullElements,precondition.getKind());
 		assertEquals("\"list should not have nulls\"",precondition.getAdditionalInfo());
@@ -124,8 +122,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("NotEmpty.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("NotEmpty.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("new ArrayList(10)",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangNotEmpty,precondition.getKind());
 		assertEquals("\"list should not be empty\"",precondition.getAdditionalInfo());
@@ -140,8 +138,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("NotNull.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("NotNull.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("\"foo\"",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangNotEmpty,precondition.getKind());
 		assertEquals("\"string should not be null\"",precondition.getAdditionalInfo());
@@ -156,8 +154,8 @@ public class TestCommonsValidate2 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("AllElementsOfType.java",precondition.getCuName());
-		assertEquals("foo(List)",precondition.getMethodDeclaration());
+		assertEquals("AllElementsOfType.java",precondition.getLocation().getCuName());
+		assertEquals("foo(List)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("all of list instanceOf String.class",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang2AllElementsOfType,precondition.getKind());
 		assertEquals("\"all elements in list must be strings\"",precondition.getAdditionalInfo());

@@ -27,14 +27,9 @@ public class JavaAssertVisitor extends AbstractMethodVisitor {
         }
 
         ContractElement p = initConstraint();
-
-        p.setProgramVersion(ProgramVersion.getOrCreate(programName, version));
-        p.setCuName(cuName);
-        p.setCondition(condition);
-        p.setKind(ConstraintType.JavaAssert);
         p.setLineNo(n.getBeginLine());
-        p.setAdditionalInfo(info);
-
+        p.setProgramVersion(ProgramVersion.getOrCreate(programName, version));p.setCondition(condition);
+        p.setKind(ConstraintType.JavaAssert);p.setAdditionalInfo(info);
         consumer.constraintFound(p);
 
         super.visit(n, arg);

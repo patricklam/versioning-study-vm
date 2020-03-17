@@ -58,7 +58,7 @@ public class TestJavaAssert {
 
         for (ContractElement precondition : preconditions) {
             // not precise finding, but ok for tests
-            if (precondition.getMethodDeclaration().contains(methodName)) {
+            if (precondition.getLocation().getMethodDeclaration().contains(methodName)) {
                 p = precondition;
                 break;
             }

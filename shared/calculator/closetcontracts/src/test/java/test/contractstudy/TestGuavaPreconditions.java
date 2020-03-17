@@ -29,8 +29,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckArgument1.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckArgument1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionCheckArgument,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -45,8 +45,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckArgument2.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckArgument2.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionCheckArgument,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -61,8 +61,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckArgument3.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckArgument3.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionCheckArgument,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -77,8 +77,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckArgument4.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckArgument4.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionCheckArgument,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -109,8 +109,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckState1.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckState1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("this.field == 42",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionCheckState,precondition.getKind());
 		assertEquals("\"Field value must be 42\"",precondition.getAdditionalInfo());
@@ -125,8 +125,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckState2.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckState2.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("this.field == 42",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionCheckState,precondition.getKind());
 		assertEquals("",precondition.getAdditionalInfo());
@@ -141,8 +141,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckElementIndex1.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckElementIndex1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("0<=i<5",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionElementIndex,precondition.getKind());
 		assertEquals("\"must fit into an array of size 5\"",precondition.getAdditionalInfo());
@@ -157,8 +157,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckPositionIndex1.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckPositionIndex1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("0<=i<5",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionPositionIndex,precondition.getKind());
 		assertEquals("\"must fit into an array of size 5\"",precondition.getAdditionalInfo());
@@ -173,8 +173,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckNotNull1.java",precondition.getCuName());
-		assertEquals("foo(Object)",precondition.getMethodDeclaration());
+		assertEquals("CheckNotNull1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(Object)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("obj!=null",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionNotNull,precondition.getKind());
 		assertEquals("\"the argument should not be null\"",precondition.getAdditionalInfo());
@@ -189,8 +189,8 @@ public class TestGuavaPreconditions {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("CheckPositionIndexes1.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("CheckPositionIndexes1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("0<=i<=5<=8",precondition.getCondition());
 		assertEquals(ConstraintType.GuavaPreconditionPositionIndexes,precondition.getKind());
 		assertEquals("",precondition.getAdditionalInfo());

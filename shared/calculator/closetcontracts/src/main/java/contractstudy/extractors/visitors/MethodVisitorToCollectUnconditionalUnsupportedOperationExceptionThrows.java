@@ -45,11 +45,10 @@ public class MethodVisitorToCollectUnconditionalUnsupportedOperationExceptionThr
 		
 		if (excTypeName.endsWith(UnsupportedOperationException.class.getSimpleName()) && n.getExpr() instanceof ObjectCreationExpr && (n.getParentNode() instanceof IfStmt || (n.getParentNode() instanceof BlockStmt && n.getParentNode().getParentNode() instanceof MethodDeclaration))) {
             ContractElement p = initConstraint();
+            p.setLineNo(n.getBeginLine());
             p.setProgramVersion(ProgramVersion.getOrCreate(programName,this.version));
-            p.setCuName(this.cuName);
             p.setCondition(null);
             p.setKind(ConstraintType.UCREUnsupportedOperationException);
-            p.setLineNo(n.getBeginLine());
             p.setAdditionalInfo(additionalInfo);
             consumer.constraintFound(p);
 		}

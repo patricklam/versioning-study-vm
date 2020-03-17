@@ -78,12 +78,11 @@ public class VisitorToCollectAnnotations extends AbstractMethodVisitor {
     private ContractElement create(ProgramVersion programVersion, String cuName, ConstraintType constraintType, String condition, int beginLine, ConstraintedArtefact artefact) {
         ContractElement p = initConstraint();
         p.setProgramVersion(programVersion);
-        p.setCuName(cuName);
         p.setCondition(condition);
         p.setKind(constraintType);
-        p.setLineNo(beginLine);
         p.setAdditionalInfo(null);
         p.setConstraintedArtefact(artefact);
+        p.setLineNo(beginLine);
         return p;
     }
 

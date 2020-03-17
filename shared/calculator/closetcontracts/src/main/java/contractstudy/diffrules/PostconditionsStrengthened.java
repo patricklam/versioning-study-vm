@@ -4,9 +4,7 @@ import contractstudy.ContractElement;
 import contractstudy.ConstraintClassification;
 import contractstudy.DiffResult;
 import contractstudy.DiffRule;
-
 import java.util.List;
-
 import static contractstudy.diffrules.Utils.constraintStrengthened;
 import static contractstudy.diffrules.Utils.filter;
 import static contractstudy.diffrules.Utils.unchanged;

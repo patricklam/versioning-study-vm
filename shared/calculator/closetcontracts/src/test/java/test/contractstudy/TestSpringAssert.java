@@ -29,8 +29,8 @@ public class TestSpringAssert {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("DoesNotContain1.java",precondition.getCuName());
-		assertEquals("foo()",precondition.getMethodDeclaration());
+		assertEquals("DoesNotContain1.java",precondition.getLocation().getCuName());
+		assertEquals("foo()",precondition.getLocation().getMethodDeclaration());
 		assertEquals("!\"pool\".contains(\"pooh\")",precondition.getCondition());
 		assertEquals(ConstraintType.SpringAssertDoesNotContain,precondition.getKind());
 		assertEquals("\"not good\"",precondition.getAdditionalInfo());
@@ -45,8 +45,8 @@ public class TestSpringAssert {
         assertEquals(1,preconditions.size());
 
         ContractElement precondition = preconditions.get(0);
-        assertEquals("DoesNotContain2.java",precondition.getCuName());
-        assertEquals("foo()",precondition.getMethodDeclaration());
+        assertEquals("DoesNotContain2.java",precondition.getLocation().getCuName());
+        assertEquals("foo()",precondition.getLocation().getMethodDeclaration());
         assertEquals("!\"pool\".contains(\"pooh\")",precondition.getCondition());
         assertEquals(ConstraintType.SpringAssertDoesNotContain,precondition.getKind());
         assertEquals("\"not good\"",precondition.getAdditionalInfo());
@@ -61,8 +61,8 @@ public class TestSpringAssert {
         assertEquals(1,preconditions.size());
 
         ContractElement precondition = preconditions.get(0);
-        assertEquals("DoesNotContain3.java",precondition.getCuName());
-        assertEquals("foo()",precondition.getMethodDeclaration());
+        assertEquals("DoesNotContain3.java",precondition.getLocation().getCuName());
+        assertEquals("foo()",precondition.getLocation().getMethodDeclaration());
         assertEquals("!\"pool\".contains(\"pooh\")",precondition.getCondition());
         assertEquals(ConstraintType.SpringAssertDoesNotContain,precondition.getKind());
         assertEquals("\"not good\"",precondition.getAdditionalInfo());
@@ -77,8 +77,8 @@ public class TestSpringAssert {
         assertEquals(1,preconditions.size());
 
         ContractElement precondition = preconditions.get(0);
-        assertEquals("DoesNotContain4.java",precondition.getCuName());
-        assertEquals("foo()",precondition.getMethodDeclaration());
+        assertEquals("DoesNotContain4.java",precondition.getLocation().getCuName());
+        assertEquals("foo()",precondition.getLocation().getMethodDeclaration());
         assertEquals("!\"pool\".contains(\"pooh\")",precondition.getCondition());
         assertEquals(ConstraintType.SpringAssertDoesNotContain,precondition.getKind());
         assertEquals("\"not good\"",precondition.getAdditionalInfo());

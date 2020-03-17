@@ -59,7 +59,7 @@ if (m_aNewFile.exists ())
 ...
 ```
 
-NOTE: ph-commons uses its own precondition API `com.helger.commons.ValueEnforcer`. 
+__NOTE: ph-commons uses its own precondition API `com.helger.commons.ValueEnforcer`! This can cause both FNs and FPs.__
 
 ####  ph-commons  9.0.0  > 9.3.9 Issue 3 (PRECONDITION_ADDED)
 
@@ -68,7 +68,9 @@ NOTE: ph-commons uses its own precondition API `com.helger.commons.ValueEnforcer
 "method" : "append(CharSequence)"
 ```
 
-Potenial FP (detected added FindBugs-Nullable) , need to investigate further ! 
+FP (detected added FindBugs-Nullable) , the precondition JSR305Nullable is kept, but an additional precodition FindBugsNullable 
+is detected due to the import `import edu.umd.cs.findbugs.annotations.SuppressFBWarnings` . 
+TODO: must improve import handling as this does not import the entire package ! 
 
 ####  ph-commons  9.0.0  > 9.3.9 Issue 4 (PRECONDITION_ADDED)
 

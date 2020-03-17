@@ -52,13 +52,10 @@ public class MethodVisitorToCollectConditionalRuntimeExceptionThrows extends Abs
 				String additionalInfo = b.toString();
 				
 				ContractElement p = initConstraint();
-				
+				p.setLineNo(n.getBeginLine());
 				p.setProgramVersion(ProgramVersion.getOrCreate(programName,this.version));
-				p.setCuName(this.cuName);
-				p.setMethodDeclaration(this.methodDeclaration);
 				p.setCondition(condition);
 				p.setKind(kind);
-				p.setLineNo(n.getBeginLine());
 				p.setAdditionalInfo(additionalInfo);
 				
 				consumer.constraintFound(p);

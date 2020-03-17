@@ -13,9 +13,7 @@ import semverstudy.commons.DiffResult;
 import semverstudy.commons.Downloader;
 import semverstudy.commons.bcm.ByteCodeModel;
 import semverstudy.commons.bcm.JType;
-
 import java.io.*;
-import java.lang.reflect.Type;
 import java.net.URL;
 import java.nio.file.FileVisitResult;
 import java.nio.file.FileVisitor;
@@ -76,7 +74,7 @@ public class CompatibilityAnalysis {
                 LOGGER.info("Incompatible change for in project " + project.getName());
                 LOGGER.info("\tversion 1: " + projectVersion1.getVersion());
                 LOGGER.info("\tversion 2: " + projectVersion2.getVersion());
-                LOGGER.info("\tlocation: " + location.getCu() + "::" + location.getMethodDeclaration());
+                LOGGER.info("\tlocation: " + location.getCuName() + "::" + location.getMethodDeclaration());
                 LOGGER.info("\tviolation: " + issue);
                 LOGGER.info("\tdetail: " + detail);
 
@@ -91,7 +89,7 @@ public class CompatibilityAnalysis {
                 DiffIssue diffIssue = new DiffIssue();
                 diffIssue.setTool(TOOL_NAME);
                 diffIssue.setKey(issue);
-                diffIssue.setFile(location.getCu());
+                diffIssue.setFile(location.getCuName());
                 diffIssue.setMethod(location.getMethodDeclaration());
                 diffIssue.setDirection("+1"); // TODO need some clarification here from Patrick
                 diffIssue.setLine(location.getLineNo()==-1?MISSING_INFORMATION:(""+location.getLineNo()));
@@ -128,11 +126,17 @@ public class CompatibilityAnalysis {
                 parsedProgramVersionCounter.incrementAndGet();
                 LOGGER.info("Analysing project version " + project.getName() + " - "+ projectVersion.getVersion());
 
-                URL url = projectVersion.getBinary();
-                File jar = Downloader.download(url);
-                assert !jar.isDirectory(); // downloaded should not unzip jars
 
-                ByteCodeModel byteCodeModel = new ByteCodeModel(jar);
+                URL url = projectVersion.getBinary();
+                ByteCodeModel byteCodeModel = null;
+                if (url!=null) {
+                    File jar = Downloader.download(url);
+                    assert !jar.isDirectory(); // downloaded should not unzip jars
+                    byteCodeModel = new ByteCodeModel(jar);
+                }
+                else {
+                    LOGGER.warn("Cannot create byte code model to cross-reference source code artefacts, binary is missing");
+                }
 
                 File projectVersionFolder = Downloader.download(projectVersion.getSource());
                 ConstraintCollector collector = new ConstraintCollector() {
@@ -147,12 +151,13 @@ public class CompatibilityAnalysis {
                 constraintCounter.addAndGet(collector.getContractElements().size());
 
                 List<ContractElement> contracts = collector.getContractElements();
+                Set<Location> locations = collector.getVisitedLocations();
 
-                for (ContractElement contractElement:contracts) {
-                    mapSignatures(byteCodeModel,contractElement);
+                if (byteCodeModel!=null) {
+                    normaliseLocations(locations,byteCodeModel);
+                    normaliseLocations(contracts,byteCodeModel);
                 }
 
-                Set<Location> locations = collector.getVisitedLocations();
                 if (contractsOfPreviousVersion!=null) {
                     assert locationsInPreviousVersion!=null;
                     diffAndReport(project,previousVersion,projectVersion,contractsOfPreviousVersion,contracts,locationsInPreviousVersion,locations,reporter);
@@ -173,11 +178,26 @@ public class CompatibilityAnalysis {
         //        LOGGER.info("\tcontracts found: " + constraintCounter.intValue());
     }
 
-    // refine the methodDeclaration field of a contractElement using information from bytecode analysis
-    private static void mapSignatures(ByteCodeModel byteCodeModel, ContractElement contractElement) {
-        JType type = findClass(byteCodeModel,contractElement.getCuName());
-        System.out.println(type);
+    private static void normaliseLocations(Set<Location> locations,ByteCodeModel byteCodeModel) {
+        for (Location location:locations) {
+            normaliseLocation(location,byteCodeModel);
+        }
     }
+
+    private static void normaliseLocations(List<ContractElement> contractElements,ByteCodeModel byteCodeModel) {
+        for (ContractElement ce:contractElements) {
+            normaliseLocation(ce.getLocation(),byteCodeModel);
+        }
+    }
+
+    // try to replace partial type names uses in the parameter type list by full names
+    // TODO: check performance , perhaps use cache
+    private static void normaliseLocation(Location location, ByteCodeModel byteCodeModel) {
+        // not yet implemented
+    }
+
+
+
 
     private static JType findClass(ByteCodeModel byteCodeModel, String cuName) {
         String name = cuName;
@@ -257,7 +277,7 @@ public class CompatibilityAnalysis {
     private static Multimap<Location, ContractElement> indexContracts(List<ContractElement> contracts) {
         Multimap<Location, ContractElement> indexedContracts = HashMultimap.create();
         for (ContractElement contractElement:contracts) {
-            indexedContracts.put(Location.newFrom(contractElement),contractElement);
+            indexedContracts.put(contractElement.getLocation(),contractElement);
         }
         return indexedContracts;
     }

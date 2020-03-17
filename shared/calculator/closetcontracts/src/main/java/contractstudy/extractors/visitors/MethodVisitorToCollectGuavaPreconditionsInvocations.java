@@ -6,10 +6,8 @@ import contractstudy.ConstraintType;
 import contractstudy.ContractElement;
 import contractstudy.ExtractionListener;
 import contractstudy.ProgramVersion;
-
 import java.util.Collection;
 import java.util.List;
-
 import static contractstudy.extractors.visitors.Utils.encodeMessageArgs;
 
 /**
@@ -37,10 +35,8 @@ public class MethodVisitorToCollectGuavaPreconditionsInvocations extends MethodV
 		String scope = expr==null?null:expr.toString();
 		List<Expression> args = callExpr.getArgs();
 		ContractElement p = initConstraint();
-		p.setProgramVersion(ProgramVersion.getOrCreate(programName,this.version));
-		p.setCuName(this.cuName);
-		p.setMethodDeclaration(this.methodDeclaration);
 		p.setLineNo(callExpr.getBeginLine());
+		p.setProgramVersion(ProgramVersion.getOrCreate(programName,this.version));
 		
 		if (args.size()>0 && checkImports(name,scope,"Preconditions","com.google.common.base.Preconditions")) {
 			if (name.equals("checkArgument")) {

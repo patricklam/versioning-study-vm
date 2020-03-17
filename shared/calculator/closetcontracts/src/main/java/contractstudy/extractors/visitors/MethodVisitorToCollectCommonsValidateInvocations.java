@@ -38,9 +38,8 @@ public abstract class MethodVisitorToCollectCommonsValidateInvocations extends M
 		String scope = expr==null?null:expr.toString();
 		List<Expression> args = callExpr.getArgs();
 		ContractElement p = initConstraint();
-		p.setProgramVersion(ProgramVersion.getOrCreate(programName,this.version));
-		p.setCuName(this.cuName);
 		p.setLineNo(callExpr.getBeginLine());
+		p.setProgramVersion(ProgramVersion.getOrCreate(programName,this.version));
 		
 		if (args.size()>0 && checkImports(name,scope)) {
 			if (name.equals("isTrue")) {

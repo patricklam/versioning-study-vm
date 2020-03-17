@@ -79,8 +79,8 @@ public class TestJsr303Annotations {
         assertNotNull("Precondition 'Max' does not exist", max);
         assertEquals("10", max.getCondition());
 
-        assertEquals("method(Integer)", max.getMethodDeclaration());
-        assertEquals("method(Integer)", min.getMethodDeclaration());
+        assertEquals("method(Integer)", max.getLocation().getMethodDeclaration());
+        assertEquals("method(Integer)", min.getLocation().getMethodDeclaration());
     }
 
     @Test
@@ -98,8 +98,8 @@ public class TestJsr303Annotations {
         assertNotNull("Precondition 'Max' does not exist", max);
         assertEquals("10", max.getCondition());
 
-        assertEquals("Jsr303ConstructorParamAnnotation(Integer)", max.getMethodDeclaration());
-        assertEquals("Jsr303ConstructorParamAnnotation(Integer)", min.getMethodDeclaration());
+        assertEquals("<init>(Integer)", max.getLocation().getMethodDeclaration());
+        assertEquals("<init>(Integer)", min.getLocation().getMethodDeclaration());
     }
 
     /**

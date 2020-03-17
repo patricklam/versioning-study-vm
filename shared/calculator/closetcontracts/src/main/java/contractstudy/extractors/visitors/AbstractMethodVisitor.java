@@ -13,6 +13,8 @@ import contractstudy.ExtractionListener;
 import contractstudy.Preferences;
 import semverstudy.closetcontracts.Location;
 
+import java.util.Stack;
+
 /**
  * Abstract superclass for visitors for method nodes in the AST, used to collect invocations of API methods
  * @author jens dietrich
@@ -21,15 +23,17 @@ import semverstudy.closetcontracts.Location;
 public abstract class AbstractMethodVisitor extends VoidVisitorAdapter<Object> {
 
 	private String packageName;
+	private String className;
 	protected ExtractionListener<ContractElement> consumer = null;
 	protected String programName = null;
 	protected String version = null;
 	protected String cuName = null;
-	protected String methodDeclaration = null;
 	private boolean isAbstractMethod = false;
 	private boolean isInterface = false;
 	private boolean isDefaultMethod = false;
     private boolean includePrivateMethods = Preferences.includePrivateMethods();
+    private Stack<String> innerClassNames = new Stack<>();
+    protected Location location = null;
 
 	public AbstractMethodVisitor(
 			ExtractionListener<ContractElement> consumer,
@@ -44,11 +48,11 @@ public abstract class AbstractMethodVisitor extends VoidVisitorAdapter<Object> {
 		this.cuName = cuName;
 	}
 
-
 	@Override
 	public void visit(ClassOrInterfaceDeclaration n, Object arg) {
 
 		this.isInterface = n.isInterface();
+		this.className = n.getName();
 
 		super.visit(n, arg);
 	}
@@ -67,11 +71,9 @@ public abstract class AbstractMethodVisitor extends VoidVisitorAdapter<Object> {
 		isDefaultMethod = methodDeclr.isDefault();
 		isAbstractMethod = ModifierSet.isAbstract(modifiers);
 		if (includePrivateMethods || isInterface || ModifierSet.isPublic(modifiers) || ModifierSet.isProtected(modifiers)) {
-			this.methodDeclaration = Utils.trimRetType(methodDeclr.getDeclarationAsString(false, false, false)); // flags: incl modifiers , incl throws
-
-			Location location = new Location(this.cuName,this.methodDeclaration, methodDeclr.getBeginLine());
+			Location location = new Location(cuName,packageName,className,innerClassNames,methodDeclr);
 			this.consumer.locationVisited(location);
-
+			this.location = location;
 			super.visit(methodDeclr, arg);
 		}
 	}
@@ -82,11 +84,9 @@ public abstract class AbstractMethodVisitor extends VoidVisitorAdapter<Object> {
 		isDefaultMethod = false;
 		isAbstractMethod = false;
         if (includePrivateMethods || isInterface || ModifierSet.isPublic(modifiers) || ModifierSet.isProtected(modifiers)) {
-            this.methodDeclaration = constructorDeclr.getDeclarationAsString(false, false, false);
-
-            Location location = new Location(this.cuName,this.methodDeclaration,constructorDeclr.getBeginLine());
+			Location location = new Location(cuName,packageName,className,innerClassNames,constructorDeclr);
 			this.consumer.locationVisited(location);
-
+			this.location = location;
             super.visit(constructorDeclr, arg);
         }
 	}
@@ -99,16 +99,14 @@ public abstract class AbstractMethodVisitor extends VoidVisitorAdapter<Object> {
 	protected ContractElement initConstraint() {
 		ContractElement p = new ContractElement();
 		p.setMethodAbstract(computeAbstractMethod());
-		p.setMethodDeclaration(methodDeclaration);
-
+		p.setLocation(location);
 		return p;
 	}
 
 	/**
 	 * Find owner class of a node.
-	 *
 	 * @param node a node
-	 * @return class owenr includding inner classes - e.g.  Foo.Inner.XY
+	 * @return class owner including inner classes - e.g.  Foo.Inner.XY
 	 */
 	protected String findOwner(Node node) {
 		Node parent = node;

@@ -27,8 +27,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue1.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue1.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -43,8 +43,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue2.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue2.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -59,8 +59,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue3.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue3.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -75,8 +75,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsTrue4.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsTrue4.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i < 0",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangIsTrue,precondition.getKind());
 		assertEquals("\"Parameter must be >=0\"",precondition.getAdditionalInfo());
@@ -107,8 +107,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("NoNullElements.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("NoNullElements.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("new ArrayList(10)",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangNoNullElements,precondition.getKind());
 		assertEquals("\"list should not have nulls\"",precondition.getAdditionalInfo());
@@ -123,8 +123,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("NotEmpty.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("NotEmpty.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("new ArrayList(10)",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangNotEmpty,precondition.getKind());
 		assertEquals("\"list should not be empty\"",precondition.getAdditionalInfo());
@@ -139,8 +139,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("NotNull.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("NotNull.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("\"foo\"",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLangNotEmpty,precondition.getKind());
 		assertEquals("\"string should not be null\"",precondition.getAdditionalInfo());
@@ -155,8 +155,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("ExclusiveBetween.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("ExclusiveBetween.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("1 < 3 < i",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3ExclusiveBetween,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());
@@ -171,8 +171,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("InclusiveBetween.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("InclusiveBetween.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("1 <= 3 <= i",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3InclusiveBetween,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());
@@ -187,8 +187,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsAssignableFrom.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsAssignableFrom.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("String.class subtypeOf Object.class",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3IsAssignableFrom,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());
@@ -203,8 +203,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("IsInstanceOf.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("IsInstanceOf.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("\"foo\" instanceof Object.class",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3IsInstanceOf,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());
@@ -219,8 +219,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("MatchesPattern.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("MatchesPattern.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("\"foo\" matches \"foo*\"",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3MatchesPattern,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());
@@ -235,8 +235,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("NotBlank.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("NotBlank.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("\"foo\" is not blank",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3NotBlank,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());
@@ -251,8 +251,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("ValidIndex.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("ValidIndex.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("42 is valid index in new String[] {}",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3ValidIndex,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());
@@ -267,8 +267,8 @@ public class TestCommonsValidate3 {
 		assertEquals(1,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("ValidState.java",precondition.getCuName());
-		assertEquals("foo(int)",precondition.getMethodDeclaration());
+		assertEquals("ValidState.java",precondition.getLocation().getCuName());
+		assertEquals("foo(int)",precondition.getLocation().getMethodDeclaration());
 		assertEquals("i == 42",precondition.getCondition());
 		assertEquals(ConstraintType.CommonsLang3ValidState,precondition.getKind());
 		assertEquals("\"some message\"",precondition.getAdditionalInfo());

@@ -48,6 +48,10 @@ public class ByteCodeModel {
             .collect(Collectors.toSet());
     }
 
+    public Collection<JType> getAllTypes() {
+        return this.types.values();
+    }
+
     private void init()  {
         LOGGER.info("Indexing bytecode");
         this.types = new HashMap<>();

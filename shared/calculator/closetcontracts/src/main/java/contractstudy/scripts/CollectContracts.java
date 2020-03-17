@@ -20,14 +20,10 @@ import contractstudy.extractors.JavaAssertExtractor;
 import contractstudy.extractors.JetBrainsExtractor;
 import contractstudy.extractors.SpringAssertExtractor;
 import contractstudy.extractors.UnconditionalOperationNotSupportedExceptionExtractor;
-import contractstudy.scripts.engine.ArtefactFactory;
-import contractstudy.scripts.engine.Experiment;
-import contractstudy.scripts.engine.ExperimentArtefact;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -49,7 +45,7 @@ import java.util.zip.ZipFile;
  * This produces intermediate JSON files used by other scripts.
  * @author jens dietrich
  */
-public class CollectContracts implements Experiment{
+public class CollectContracts {
 
 	static Logger LOGGER = Logging.getLogger(CollectContracts.class);
 
@@ -173,25 +169,4 @@ public class CollectContracts implements Experiment{
         
 	}
 
-	@Override
-	public void invoke() throws Exception {
-		if (provides().exists()) {
-			LOGGER.info("Skipping already performed experiment: " + provides().getName());
-
-			return;
-		}
-		CollectContracts.main(new String[] {});
-	}
-
-	@Override
-	public ExperimentArtefact[] requires() {
-		return new ExperimentArtefact[] {
-				ArtefactFactory.inputSrcZipFiles()
-		};
-	}
-
-	@Override
-	public ExperimentArtefact provides() {
-		return ArtefactFactory.contracts();
-	}
 }

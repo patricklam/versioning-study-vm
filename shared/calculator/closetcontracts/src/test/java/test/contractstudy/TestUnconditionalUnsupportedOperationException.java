@@ -29,8 +29,8 @@ public class TestUnconditionalUnsupportedOperationException {
 		assertEquals(2,preconditions.size());
 		
 		ContractElement precondition = preconditions.get(0);
-		assertEquals("UnsuppOp.java",precondition.getCuName());
-		assertEquals("foo1()",precondition.getMethodDeclaration());
+		assertEquals("UnsuppOp.java",precondition.getLocation().getCuName());
+		assertEquals("foo1()",precondition.getLocation().getMethodDeclaration());
 		assertEquals("-",precondition.getCondition());
 		assertEquals(ConstraintType.UCREUnsupportedOperationException,precondition.getKind());
 		assertEquals("\"foo1 is not supported\"",precondition.getAdditionalInfo());
@@ -45,8 +45,8 @@ public class TestUnconditionalUnsupportedOperationException {
         assertEquals(2,preconditions.size());
 
         ContractElement precondition = preconditions.get(1);
-        assertEquals("UnsuppOp.java",precondition.getCuName());
-        assertEquals("foo2()",precondition.getMethodDeclaration());
+        assertEquals("UnsuppOp.java",precondition.getLocation().getCuName());
+        assertEquals("foo2()",precondition.getLocation().getMethodDeclaration());
         assertEquals("-",precondition.getCondition());
         assertEquals(ConstraintType.UCREUnsupportedOperationException,precondition.getKind());
         assertEquals("\"foo2 is not supported\"",precondition.getAdditionalInfo());
