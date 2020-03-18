@@ -5,7 +5,7 @@ import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
 import contractstudy.*;
-import contractstudy.diffrules.*;
+import contractstudy.Utils;
 import contractstudy.extractors.*;
 import org.apache.log4j.Logger;
 import semverstudy.commons.*;

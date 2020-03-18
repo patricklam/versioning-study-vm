@@ -1,7 +1,7 @@
 package test.contractstudy;
 
 import contractstudy.*;
-import contractstudy.scripts.CollectContracts;
+import contractstudy.CollectContracts;
 import org.junit.Test;
 import test.contractstudy.testdata.jsr303.Jsr303ConstructorParamAnnotation;
 import test.contractstudy.testdata.jsr303.Jsr303MethodParamAnnotation;

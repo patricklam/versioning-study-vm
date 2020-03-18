@@ -1,12 +1,6 @@
-package contractstudy.scripts;
+package contractstudy;
 
-import contractstudy.ContractElement;
-import contractstudy.ConstraintCollector;
-import contractstudy.ExtractionListener;
-import contractstudy.Extractor;
 import semverstudy.commons.Logging;
-import contractstudy.Preferences;
-import contractstudy.ProgramVersion;
 import contractstudy.extractors.CommonsValidate2Extractor;
 import contractstudy.extractors.CommonsValidate3Extractor;
 import contractstudy.extractors.ConditionalRuntimeExceptionExtractor;
@@ -42,7 +36,7 @@ import java.util.zip.ZipFile;
 /**
  * Collect contracts from Java source code.
  * Uses multiple threads, the number of threads is set as a constant.
- * This produces intermediate JSON files used by other scripts.
+ * This produces intermediate JSON files that can be used by other scripts.
  * @author jens dietrich
  */
 public class CollectContracts {

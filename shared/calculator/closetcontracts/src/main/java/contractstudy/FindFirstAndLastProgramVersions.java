@@ -100,7 +100,7 @@ public class FindFirstAndLastProgramVersions {
     private static boolean canBeSorted(ProgramVersion pv) {
         // use blacklist API to exclude versions with version numbers that don't fit into versioning scheme
         try {
-            return !contractstudy.diffrules.Utils.cannotSort(pv);
+            return !Utils.cannotSort(pv);
         }
         catch (Exception x) {
             // TODO: this should not be necessary

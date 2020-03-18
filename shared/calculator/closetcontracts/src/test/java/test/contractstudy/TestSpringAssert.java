@@ -1,7 +1,7 @@
 package test.contractstudy;
 
 import contractstudy.ContractElement;
-import contractstudy.scripts.CollectContracts;
+import contractstudy.CollectContracts;
 import contractstudy.ConstraintType;
 import contractstudy.ConstraintCollector;
 import org.junit.Test;

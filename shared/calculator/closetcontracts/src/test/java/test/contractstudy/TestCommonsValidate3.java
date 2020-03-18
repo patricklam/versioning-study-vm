@@ -3,7 +3,7 @@ package test.contractstudy;
 import contractstudy.ContractElement;
 import contractstudy.ConstraintCollector;
 import contractstudy.ConstraintType;
-import contractstudy.scripts.CollectContracts;
+import contractstudy.CollectContracts;
 import org.junit.Test;
 
 import java.io.File;

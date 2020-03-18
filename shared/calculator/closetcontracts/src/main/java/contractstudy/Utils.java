@@ -1,10 +1,6 @@
-package contractstudy.diffrules;
+package contractstudy;
 
-import contractstudy.ConstraintType;
-import contractstudy.ContractElement;
 import semverstudy.commons.Logging;
-import contractstudy.Preferences;
-import contractstudy.ProgramVersion;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.text.WordUtils;
 import org.apache.log4j.Logger;
