@@ -1,7 +1,6 @@
 package contractstudy;
 
 import org.apache.log4j.Logger;
-import semverstudy.closetcontracts.Location;
 import semverstudy.commons.Logging;
 
 import java.util.*;

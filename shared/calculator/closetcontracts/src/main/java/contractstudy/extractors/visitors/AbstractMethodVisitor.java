@@ -11,7 +11,7 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import contractstudy.ContractElement;
 import contractstudy.ExtractionListener;
 import contractstudy.Preferences;
-import semverstudy.closetcontracts.Location;
+import contractstudy.Location;
 
 import java.util.Stack;
 

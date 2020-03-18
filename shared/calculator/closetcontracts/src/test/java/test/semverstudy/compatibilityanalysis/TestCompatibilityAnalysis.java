@@ -1,7 +1,7 @@
 package test.semverstudy.compatibilityanalysis;
 
 import semverstudy.closetcontracts.CompatibilityAnalysis;
-import semverstudy.closetcontracts.Location;
+import contractstudy.Location;
 import semverstudy.closetcontracts.ResultListener;
 import semverstudy.commons.Project;
 import org.junit.*;

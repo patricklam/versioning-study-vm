@@ -1,5 +1,6 @@
 package semverstudy.closetcontracts;
 
+import contractstudy.Location;
 import semverstudy.commons.Project;
 import semverstudy.commons.ProjectVersion;
 

@@ -1,7 +1,5 @@
 package contractstudy;
 
-import semverstudy.closetcontracts.Location;
-
 /**
  * Consumes constraints found, for instance, by collecting them in a list, or by appending them to a report.
  * @author jens dietrich
