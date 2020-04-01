@@ -7,3 +7,8 @@ The project can be built with Maven (`mvn package`), and to collect all project 
  
 The two parameters are (1) `<project-specs>` the location of the json file containing the specs of the projects and project versions to be analysed and (2) `<output>` -- the name of the csv file to which results are written.
 
+### Prerequisites
+
+This project has a dependency on the `commons` module that must be build first, and installed into the local repository. To do this, simply run `mvn install` in the root folder of `commons`.
+
+

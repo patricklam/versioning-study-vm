@@ -17,20 +17,14 @@
     </properties>
 
     <dependencies>
-        <!-- dependencies used in commons start here -->
+
+        <!-- local dependency on commons, commons must be installed first with `mvn install` to enable this -->
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.10.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.plexus</groupId>
-            <artifactId>plexus-archiver</artifactId>
-            <version>4.2.1</version>
+            <groupId>semverstudy</groupId>
+            <artifactId>commons</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
-        <!-- dependencies used in commons end here -->
-        
         <!--Maven aether -->
         <dependency>
             <groupId>org.eclipse.aether</groupId>
@@ -86,23 +80,10 @@
             <version>19.0</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.2</version>
-        </dependency>
-        <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20160810</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
-        <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>7.3.1</version>
-        </dependency>
-
 
         <!--Java parser -->
         <dependency>

@@ -2,7 +2,6 @@ package contractstudy;
 
 import com.google.common.base.Preconditions;
 import org.json.JSONObject;
-
 import java.util.stream.Collectors;
 
 /**
