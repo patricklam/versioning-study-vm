@@ -10,11 +10,29 @@ class JField {
     String name = null;
     String descriptor = null;
     JType type = null;
+    boolean synthetic = false;
 
-    public JField(String name, String descriptor, JType type) {
+    public JField(String name, String descriptor, JType type,boolean synthetic) {
         this.name = name;
         this.descriptor = descriptor;
         this.type = type;
+        this.synthetic = synthetic;
+    }
+
+    public boolean isSynthetic() {
+        return synthetic;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescriptor() {
+        return descriptor;
+    }
+
+    public JType getType() {
+        return type;
     }
 
     @Override

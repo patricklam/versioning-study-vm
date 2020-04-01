@@ -22,6 +22,14 @@ public class JClass extends JType {
         return this.name;
     }
 
+    public Collection<JMethod> getMethods() {
+        return methods;
+    }
+
+    public Collection<JField> getFields() {
+        return fields;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

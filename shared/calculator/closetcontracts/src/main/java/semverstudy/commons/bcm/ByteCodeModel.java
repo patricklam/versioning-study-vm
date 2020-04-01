@@ -85,19 +85,20 @@ public class ByteCodeModel {
                 name = name.replaceAll("/",".");
                 clazz = (JClass)types.get(name);
                 assert clazz!=null;
-
             }
             @Override
             public FieldVisitor visitField(int access, String name, String descriptor, String signature, Object value) {
                 JType type = DescriptorParser.parseFieldDescriptor(descriptor,factory);
-                clazz.fields.add(new JField(name,descriptor,type));
+                boolean isSynthetic = checkASMFlag(access,Opcodes.ACC_SYNTHETIC) || checkASMFlag(access,Opcodes.ACC_BRIDGE);
+                clazz.fields.add(new JField(name,descriptor,type,isSynthetic));
                 return null;
             }
 
             @Override
             public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {
                 Pair<List<JType>, JType> sign = DescriptorParser.parseMethodDescriptor(descriptor,factory);
-                clazz.methods.add(new JMethod(name,descriptor,sign.getRight(),sign.getLeft()));
+                boolean isSynthetic = checkASMFlag(access,Opcodes.ACC_SYNTHETIC) || checkASMFlag(access,Opcodes.ACC_BRIDGE);
+                clazz.methods.add(new JMethod(name,descriptor,sign.getRight(),sign.getLeft(),isSynthetic));
                 return null;
             }
         };
@@ -129,5 +130,9 @@ public class ByteCodeModel {
 
     private void analyse (InputStream in, ClassVisitor visitor) throws IOException {
         new ClassReader(in).accept(visitor, 0);
+    }
+
+    private boolean checkASMFlag (int flags, int opCode) {
+        return (flags & opCode) == opCode;
     }
 }

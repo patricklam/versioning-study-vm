@@ -12,6 +12,8 @@ import semverstudy.commons.*;
 import semverstudy.commons.DiffResult;
 import semverstudy.commons.Downloader;
 import semverstudy.commons.bcm.ByteCodeModel;
+import semverstudy.commons.bcm.JClass;
+import semverstudy.commons.bcm.JMethod;
 import semverstudy.commons.bcm.JType;
 import java.io.*;
 import java.net.URL;
@@ -193,7 +195,51 @@ public class CompatibilityAnalysis {
     // try to replace partial type names uses in the parameter type list by full names
     // TODO: check performance , perhaps use cache
     private static void normaliseLocation(Location location, ByteCodeModel byteCodeModel) {
-        // not yet implemented
+
+        // find matching classes (bytecode)
+        String className = location.getPackageName() + '.' + location.getClassName();
+        List<JClass> owners = byteCodeModel.getAllTypes().parallelStream()
+            .filter(t -> t instanceof JClass)
+            .map(t -> (JClass)t)
+            .filter(t -> t.getName().startsWith(className))
+            .collect(Collectors.toList());
+        Collections.sort(owners, Comparator.comparing(JClass::getName));
+
+        Set<JMethod> matches = new LinkedHashSet<>();
+        for (JClass owner:owners) {
+            for (JMethod method:owner.getMethods()) {
+                // extra guard on isSynthetic is to deal with bridge methods
+                if (method.getName().equals(location.getMethodName()) && method.getParamTypes().size()==location.getMethodParameterNames().size() && !method.isSynthetic()) {
+                    // check whether param types could match
+                    boolean match = true;
+                    for (int i=0;i<method.getParamTypes().size();i++) {
+                        match = match && method.getParamTypes().get(i).getName().endsWith(location.getMethodParameterNames().get(i));
+                    }
+                    // TODO also match return type to deal with return type overloading , or skip synthentic methods
+
+                    if (match) {
+                        matches.add(method);
+                    }
+                }
+            }
+        }
+
+        if (matches.size()==1) {
+            // one match, replace types -- this will usually prepend package names
+            JMethod method = matches.iterator().next();
+            for (int i=0;i<method.getParamTypes().size();i++) {
+               location.getMethodParameterNames().set(i,method.getParamTypes().get(i).getName());
+            }
+        }
+        else if (matches.size()>1) {
+            // possible explanation: matches different methods in different outer / inner classes ?
+            LOGGER.warn("More then one match found in bytecode for method " + location.getMethodDeclaration());
+        }
+        else {
+            // no match -- possible explanation: inconsistent source and binaries, leave as it
+            LOGGER.warn("No match found in bytecode for method " + location.getMethodDeclaration());
+        }
+
     }
 
 
