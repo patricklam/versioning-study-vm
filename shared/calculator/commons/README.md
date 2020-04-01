@@ -8,7 +8,7 @@ The project contains some useful utilities that can be used by other diff analys
     <dependency>
         <groupId>semverstudy</groupId>
         <artifactId>commons</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
     ```
 3. note the version, if changes are made to this project, the version number in this pom should be changes, and the dependencies 

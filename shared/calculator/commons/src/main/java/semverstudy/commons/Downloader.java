@@ -89,6 +89,7 @@ public class Downloader {
 
         		// unzip
         		ConsoleLoggerManager manager = new ConsoleLoggerManager();
+        		manager.initialize();
         		Logger plexusLogger = manager.getLoggerForComponent("archive-downloader");
 
         		targetFolder.mkdir();
