@@ -1,18 +1,46 @@
 package semverstudy.meta;
 
-import java.net.URI;
+import java.util.Objects;
 import java.util.Set;
 
 /**
  * Representation of Maven meta data.
  * @author jens dietrich
  */
-public interface MetaData {
+public class MetaData {
 
-    String getLicenseName ();
+    private Set<Dependency> dependencies = null;
+    private Set<License> licenses = null;
 
-    URI getLicenseURI();
+    public Set<Dependency> getDependencies() {
+        return dependencies;
+    }
 
-    Set<Dependency> getDependencies();
+    public void setDependencies(Set<Dependency> dependencies) {
+        this.dependencies = dependencies;
+    }
+
+    public Set<License> getLicenses() {
+        return licenses;
+    }
+
+    public void setLicenses(Set<License> licenses) {
+        this.licenses = licenses;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MetaData metaData = (MetaData) o;
+        return Objects.equals(dependencies, metaData.dependencies) &&
+                Objects.equals(licenses, metaData.licenses);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dependencies, licenses);
+    }
+
 
 }

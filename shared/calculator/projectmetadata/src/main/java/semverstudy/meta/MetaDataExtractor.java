@@ -1,6 +1,7 @@
 package semverstudy.meta;
 
-import semverstudy.commoms.ProjectVersion;
+import semverstudy.commons.Project;
+import semverstudy.commons.ProjectVersion;
 
 /**
  * Interface for utilities to extract meta data.
@@ -8,5 +9,5 @@ import semverstudy.commoms.ProjectVersion;
  */
 public interface MetaDataExtractor {
 
-    MetaData extractMetaData(ProjectVersion version) throws Exception;
+    MetaData extractMetaData(Project project, ProjectVersion version) throws Exception;
 }

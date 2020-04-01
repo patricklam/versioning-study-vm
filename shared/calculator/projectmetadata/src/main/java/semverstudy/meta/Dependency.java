@@ -36,6 +36,10 @@ public class Dependency {
         this.version = version;
     }
 
+    public boolean versionIsVariable() {
+        return this.version != null && this.version.startsWith("${");
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -49,5 +53,15 @@ public class Dependency {
     @Override
     public int hashCode() {
         return Objects.hash(groupId, artifactId, version);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Dependency{" +
+                "groupId='" + groupId + '\'' +
+                ", artifactId='" + artifactId + '\'' +
+                ", version='" + version + '\'' +
+                '}';
     }
 }
