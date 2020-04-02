@@ -36,6 +36,15 @@ public class License {
                 Objects.equals(url, license.url);
     }
 
+    // liberal comparision, for instance, if the name remains the same and only the URL was added or changed, it is still considered to
+    // be the same license
+    public boolean sameAs (License other) {
+        if (other==null) return false;
+        if (Objects.equals(this.name,other.name)) return true;
+        if (Objects.equals(this.url,other.url)) return true;
+        return false;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(name, url);

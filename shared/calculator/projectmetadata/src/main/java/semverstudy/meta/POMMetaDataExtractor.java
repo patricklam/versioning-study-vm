@@ -4,12 +4,15 @@ import com.google.common.base.Preconditions;
 import org.apache.log4j.Logger;
 import org.w3c.dom.*;
 import semverstudy.commons.*;
+
+import javax.annotation.Nullable;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.xpath.*;
 import java.io.File;
 import java.net.URI;
 import java.net.URL;
+import java.nio.file.Path;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -45,6 +48,7 @@ public class POMMetaDataExtractor implements MetaDataExtractor {
     }
 
     @Override
+    @Nullable
     public MetaData extractMetaData(Project project,ProjectVersion projectVersion) throws Exception {
         LOGGER.info("extracting metadata from " + project.getName() + "-" + projectVersion.getVersion());
         URL srcURL = projectVersion.getSource();
@@ -61,6 +65,11 @@ public class POMMetaDataExtractor implements MetaDataExtractor {
             // null return can be used to build chain of responsibility, e.g. to look for gradle build scripts
             return null;
         }
+
+        // find relative path for location
+        Path srcPath = src.toPath();
+        Path pomPath = pom.toPath();
+        String relPath = srcPath.relativize(pomPath).toString().toString();
 
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -91,6 +100,8 @@ public class POMMetaDataExtractor implements MetaDataExtractor {
         }
 
         MetaData metaData = new MetaData();
+        metaData.setKind(MetaDataKind.POM);
+        metaData.setLocation(relPath);
         metaData.setDependencies(dependencies);
         metaData.setLicenses(licenses);
 

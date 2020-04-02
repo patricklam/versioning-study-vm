@@ -6,11 +6,9 @@ import org.mockito.Mockito;
 import semverstudy.commons.Project;
 import semverstudy.commons.ProjectVersion;
 import semverstudy.meta.*;
-
 import java.net.URL;
 import java.util.Objects;
 import java.util.Set;
-
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
@@ -49,7 +47,6 @@ public class Test1 {
             .filter(dep -> Objects.equals(dep.getArtifactId(),artifactId))
             .filter(dep -> Objects.equals(dep.getVersion(),version))
             .findAny().isPresent();
-
     }
 
     @Test
@@ -61,7 +58,12 @@ public class Test1 {
         assertTrue(containsDependency(metaData.getDependencies(),"org.slf4j","slf4j-api",null));
     }
 
+    @Test
+    public void testMetaDataMetaDate() throws Exception {
+        MetaData metaData = extractor.extractMetaData(project,version);
 
-
+        assertEquals(MetaDataKind.POM,metaData.getKind());
+        assertEquals("project1/pom.xml",metaData.getLocation());
+    }
 
 }
