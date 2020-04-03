@@ -13,7 +13,7 @@ public class DiffIssue {
     private String method = null;
     private String direction = null;
     private String tool = null;
-
+    private String details = null;
 
     public String getTool() {
         return tool;
@@ -63,6 +63,14 @@ public class DiffIssue {
         this.direction = direction;
     }
 
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -73,11 +81,12 @@ public class DiffIssue {
                 Objects.equals(line, diffIssue.line) &&
                 Objects.equals(method, diffIssue.method) &&
                 Objects.equals(direction, diffIssue.direction) &&
-                Objects.equals(tool, diffIssue.tool);
+                Objects.equals(tool, diffIssue.tool) &&
+                Objects.equals(details, diffIssue.details);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(key, file, line, method, direction, tool);
+        return Objects.hash(key, file, line, method, direction, tool, details);
     }
 }

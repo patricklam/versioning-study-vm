@@ -57,11 +57,11 @@ public class POMMetaDataExtractor implements MetaDataExtractor {
         LOGGER.info("using downloaded sources in " + src.getAbsolutePath());
 
         File pom = findPom(src);
-        if (pom.exists()) {
+        if (pom!=null && pom.exists()) {
             LOGGER.info("Extracting from pom " + pom.getAbsolutePath());
         }
         else {
-            LOGGER.warn("Cannot find pom to parse " + pom.getAbsolutePath());
+            LOGGER.warn("Cannot find pom to parse");
             // null return can be used to build chain of responsibility, e.g. to look for gradle build scripts
             return null;
         }
