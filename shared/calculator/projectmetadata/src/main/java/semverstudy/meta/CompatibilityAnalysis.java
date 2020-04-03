@@ -67,6 +67,7 @@ public class CompatibilityAnalysis {
                 diffIssue.setKey(issue);
                 diffIssue.setFile(metaDataLocation2);
                 diffIssue.setDirection("+1"); // TODO need some clarification here from Patrick
+                diffIssue.setDetails(detail);
                 currentResult.getIssues().add(diffIssue);
 
             }
@@ -98,7 +99,9 @@ public class CompatibilityAnalysis {
                         metaData = extractor.extractMetaData(project,projectVersion);
                     }
                 }
-                diffAndReport(project,previousVersion,projectVersion,metaDataOfPreviousVersion,metaData,reporter);
+                if (metaDataOfPreviousVersion!=null) {
+                    diffAndReport(project, previousVersion, projectVersion, metaDataOfPreviousVersion, metaData, reporter);
+                }
                 previousVersion = projectVersion;
                 metaDataOfPreviousVersion = metaData;
             }
