@@ -36,6 +36,21 @@ public class Dependency {
         this.version = version;
     }
 
+    // same group and artifact id, perhaps different version
+    public boolean sameArtifactAs(Dependency other) {
+        if (other==null) return false;
+        return Objects.equals(this.getGroupId(),other.getGroupId()) && Objects.equals(this.getArtifactId(),other.getArtifactId());
+    }
+
+    // note handling of variables -- always assume it is different !
+    public boolean sameVersionAs(Dependency other) {
+        if (!this.sameArtifactAs(other)) return false;
+        if (this.versionIsVariable()) return false;
+        if (other.versionIsVariable()) return false;
+        return Objects.equals(this.getVersion(),other.getVersion());
+    }
+
+    // TODO: check whether this is Maven specific, if so must make this a field
     public boolean versionIsVariable() {
         return this.version != null && this.version.startsWith("${");
     }

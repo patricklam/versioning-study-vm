@@ -19,7 +19,7 @@ public class CompatibilityAnalysis {
     public static final String LICENSE_REMOVED = "LICENSE_REMOVED";
     public static final String DEPENDENCY_VERSION_CHANGED = "DEPENDENCY_VERSION_CHANGED";
     public static final String DEPENDENCY_ADDED = "DEPENDENCY_ADDED";
-    public static final String DEPENDENCY_REMOVED = "DEPENDENCY_ADDED";
+    public static final String DEPENDENCY_REMOVED = "DEPENDENCY_REMOVED";
     public static final String MISSING_INFORMATION = "n/a";
 
     public static final MetaDataExtractor[] EXTRACTORS = {
@@ -116,8 +116,44 @@ public class CompatibilityAnalysis {
     }
 
     private static void checkForChangedDependencies(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, MetaData metaData1, MetaData metaData2, ResultListener reporter) {
-        Set<License> dependencies1 = metaData1.getLicenses();
-        Set<License> dependencies2 = metaData2.getLicenses();
+        Set<Dependency> dependencies1 = metaData1.getDependencies();
+        Set<Dependency> dependencies2 = metaData2.getDependencies();
+
+        for (Dependency oldDependency:dependencies1) {
+            if (!dependencies2.stream().anyMatch(d -> oldDependency.sameArtifactAs(d))) {
+                reporter.resultFound(project,
+                    projectVersion1,projectVersion2,
+                    metaData1.getLocation(),metaData2.getLocation(),
+                    DEPENDENCY_REMOVED,
+                    toString(oldDependency)
+                );
+            }
+            else  {
+                for (Dependency newDependency:dependencies2) {
+                    if (oldDependency.sameArtifactAs(newDependency) && !oldDependency.sameVersionAs(newDependency)) {
+                        reporter.resultFound(project,
+                            projectVersion1,projectVersion2,
+                            metaData1.getLocation(),metaData2.getLocation(),
+                            DEPENDENCY_VERSION_CHANGED,
+                            toString(oldDependency) + " -> " + toString(newDependency)
+                        );
+                        break;
+                    }
+                }
+            }
+        }
+
+        for (Dependency newDependency:dependencies2) {
+            if (!dependencies1.stream().anyMatch(d -> newDependency.sameArtifactAs(d))) {
+                reporter.resultFound(project,
+                    projectVersion1, projectVersion2,
+                    metaData1.getLocation(), metaData2.getLocation(),
+                    DEPENDENCY_ADDED,
+                    toString(newDependency)
+                );
+            }
+        }
+
     }
 
     private static void checkForChangedLicenses(Project project, ProjectVersion projectVersion1, ProjectVersion projectVersion2, MetaData metaData1, MetaData metaData2, ResultListener reporter) {
@@ -127,13 +163,23 @@ public class CompatibilityAnalysis {
         // check for added licenses
         for (License license:licenses2) {
             if (!licenses1.stream().anyMatch(l -> license.sameAs(l))) {
-                reporter.resultFound(project,projectVersion1,projectVersion2,metaData1.getLocation(),metaData2.getLocation(),LICENSE_ADDED,toString(license));
+                reporter.resultFound(project,
+                    projectVersion1,projectVersion2,
+                    metaData1.getLocation(),metaData2.getLocation(),
+                    LICENSE_ADDED,
+                    toString(license)
+                );
             }
         }
         // report removed licenses
         for (License license:licenses1) {
             if (!licenses2.stream().anyMatch(l -> license.sameAs(l))) {
-                reporter.resultFound(project,projectVersion1,projectVersion2,metaData1.getLocation(),metaData2.getLocation(),LICENSE_REMOVED,toString(license));
+                reporter.resultFound(project,
+                    projectVersion1,projectVersion2,
+                    metaData1.getLocation(),metaData2.getLocation(),
+                    LICENSE_REMOVED,
+                    toString(license)
+                );
             }
         }
     }
@@ -144,6 +190,14 @@ public class CompatibilityAnalysis {
         if (s==null) {
             s = ""+license.getUrl();
         }
+        return s;
+    }
+
+    private static String toString(Dependency dependency) {
+        assert dependency.getArtifactId()!=null;
+        String s = dependency.getGroupId() == null ? "" : (dependency.getGroupId()+'/');
+        s = s + dependency.getArtifactId();
+        s = s + (dependency.getVersion()==null ? "" : ("-"+dependency.getVersion()));
         return s;
     }
 
