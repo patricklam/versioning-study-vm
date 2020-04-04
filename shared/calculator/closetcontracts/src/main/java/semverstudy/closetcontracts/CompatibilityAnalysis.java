@@ -196,6 +196,11 @@ public class CompatibilityAnalysis {
     // TODO: check performance , perhaps use cache
     private static void normaliseLocation(Location location, ByteCodeModel byteCodeModel) {
 
+        if (location==null) {
+            // TODO fix this
+            LOGGER.warn("Cannot normalise null location");
+            return;
+        }
         // find matching classes (bytecode)
         String className = location.getPackageName() + '.' + location.getClassName();
         List<JClass> owners = byteCodeModel.getAllTypes().parallelStream()

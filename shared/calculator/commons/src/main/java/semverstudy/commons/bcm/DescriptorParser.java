@@ -1,8 +1,6 @@
 package semverstudy.commons.bcm;
 
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Lists;
 import org.apache.commons.lang3.tuple.Pair;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -18,7 +16,11 @@ public class DescriptorParser {
      * Parses a descriptor and returns a pair consisting of parameter and return types.
      */
     public static Pair<List<JType>, JType> parseMethodDescriptor(String descr, Function<String, JType> typeFactory)  {
-        ImmutableList<Character> chars = Lists.charactersOf(descr);
+
+        List<Character> chars = new ArrayList<>(descr.length());
+        for (int i=0;i<descr.length();i++) {
+            chars.add(descr.charAt(i));
+        }
         Iterator<Character> iter = chars.listIterator();
 
         Preconditions.checkArgument(!descr.isEmpty()); // descriptors must not be empty
